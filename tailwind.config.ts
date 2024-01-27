@@ -25,6 +25,9 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        "header-forget-bassword": "url('../..//Assets/SVGs/SingIn/Background pattern decorative.png')",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -121,7 +124,7 @@ const config = {
         "Display-2xl": "4.5rem",
       },
       fontWeight: {
-        xs:"400",
+        xs: "400",
         sm: "500",
         md: "600",
       },

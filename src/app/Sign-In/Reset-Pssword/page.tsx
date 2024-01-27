@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 const page = () => {
   return (
     <div className="w-full justify-center h-screen flex  p-0">
-      <div className="flex  px-8 pb-12 flex-col pt-24 gap-8 max-w-[22.5rem] h-full">
+      <div className="flex  px-8 pb-12 flex-col pt-24 gap-8 max-w-[22.5rem] h-full max-sm:!px-4 max-sm:!py-12 ">
         <div className="flex flex-col items-center text-center gap-6 self-stretch bg-header-forget-bassword bg-cover bg-center">
           <Image src={CheckCircel} alt="" className="" />
           <h1 className="text-gray-900 text-[1.875rem] font-md leading-[2.375rem]">

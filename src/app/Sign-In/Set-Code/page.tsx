@@ -3,11 +3,12 @@ import Mail from "../../../../Assets/SVGs/SingIn/mail-01.svg";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import Link from "next/link";
 
 const page = () => {
   return (
     <div className="w-full justify-center h-screen flex  p-0">
-      <div className="flex   pb-12 flex-col pt-24 gap-8 max-w-[24rem] h-full">
+      <div className="flex   pb-12 flex-col pt-24 gap-8 max-w-[24rem] h-full max-sm:!px-4 max-sm:!py-12 overflow-x-hidden">
         <div className="flex flex-col items-center text-center justify-center  gap-6 self-stretch bg-header-forget-bassword bg-cover bg-center">
           <Image src={Mail} alt="" className="" />
           <h1 className="text-gray-900 text-[1.875rem] font-md leading-[2.375rem]">
@@ -24,9 +25,9 @@ const page = () => {
             <Input className="flex w-20 h-20 p-2 justify-center rounded-[0.625rem] border border-Brand-600 shadow-sm text-Brand-600 text-center text-[3rem] font-md leading-[3.75rem] tracking-[-0.06rem]" />
             <Input className="flex w-20 h-20 p-2 justify-center rounded-[0.625rem] border border-Brand-600 shadow-sm text-Brand-600 text-center text-[3rem] font-md leading-[3.75rem] tracking-[-0.06rem]" />
           </div>
-          <Button className=" w-100 text-white flex py-[0.625rem] px-4 justify-center items-center gap-[.375rem] rounded-radius_md bg-Brand-600 border border-Brand-600 shadow-sm">
+          <Link href='/Sign-In/Email-verified' className=" w-100 text-white flex py-[0.625rem] px-4 justify-center items-center gap-[.375rem] rounded-radius_md bg-Brand-600 border border-Brand-600 shadow-sm">
             Enter code manually
-          </Button>
+          </Link>
         </form>
         <div className="flex gap-1 justify-center">
           <p className="text-gray-600 text-Text-sm  font-xs leading-5 self-stretch">
@@ -34,7 +35,7 @@ const page = () => {
           </p>
           <a className="text-Brand-700  text-Text-sm  font-md leading-5">Click to resend</a>
         </div>
-        <a className="cursor-pointer w-full flex  justify-center items-center gap-[0.375rem]  text-gray-600 text-Text-sm font-md leading-5">
+        <Link href='/Sign-In'  className="cursor-pointer w-full flex  justify-center items-center gap-[0.375rem]  text-gray-600 text-Text-sm font-md leading-5">
           <svg
             className="w-[1.25rem] h-[1.25rem]"
             width="21"
@@ -52,7 +53,7 @@ const page = () => {
             />
           </svg>
           Back to log in
-        </a>
+        </Link>
       </div>
     </div>
   );

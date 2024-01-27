@@ -16,6 +16,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 type Ilogin = {
   email: string;
   password: string;
@@ -42,9 +43,9 @@ const page = () => {
   return (
     <div className="flex h-screen w-full items-center ">
       <div className="flex flex-col justify-center items-center flex-1 px-8 flex-shrink-0 flex-grow-0 bg-gray-50 self-stretch">
-        <div className="flex fixed top-5 left-5 gap-3">
-          <Image alt="Avatr" src={Group} className="w-[1.76569rem] h-8" />
-          <Image alt="Avatr" src={Logo} className="w-[4.44856rem] h-6" />
+        <div className="flex absolute top-5 left-5 gap-3">
+          <Image alt="Avatr" src={Group} className="w-[1.76569rem] h-8 " />
+          <Image alt="Avatr" src={Logo} className="w-[4.44856rem] h-6  mt-2" />
         </div>
         <div className="flex min-w-140  flex-col items-center gap-2  self-stretch text-center text">
           <p className="self-stretch text-gray-700 text-[1.875rem] font-md leading-[2.375rem]">
@@ -102,9 +103,12 @@ const page = () => {
                     Remember for 30 days
                   </p>
                 </div>
-                <a className="text-Brand-700 font-md text-Text-sm leading-5 ">
+                <Link
+                  href="Sign-In/Forget-Password"
+                  className="text-Brand-700 font-md text-Text-sm leading-5 "
+                >
                   Forgot password
-                </a>
+                </Link>
               </div>
 
               <Button className="w-full text-white flex py-[0.625rem] px-4 justify-center items-center gap-[.375rem] rounded-radius_md bg-Brand-600 border border-Brand-600 shadow-sm">

@@ -1,14 +1,14 @@
 import Image from "next/image";
 import React from "react";
 import key from "../../../../Assets/SVGs/SingIn/key.svg";
-import bg from "../../../../Assets/SVGs/SingIn/Background pattern decorative.png";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 const page = () => {
   return (
     <div className="w-full justify-center h-screen flex  p-0">
-      <div className="flex  px-8 pb-12 flex-col pt-24 gap-8 max-w-[22.5rem] h-full">
+      <div className="flex  px-8 pb-12 flex-col pt-24 gap-8 max-w-[22.5rem] h-full max-sm:!px-4 max-sm:!py-12">
         <div className="flex flex-col items-center text-center gap-6 self-stretch bg-header-forget-bassword bg-cover bg-center">
           <div className="w-[3.5rem] h-[3.5rem] p-[0.875rem] flex justify-center items-center rounded-radius_xl border border-gray-200 shadow-sm">
             <Image src={key} alt="key" className="" />
@@ -26,14 +26,14 @@ const page = () => {
             <Label>Email</Label>
             <Input placeholder="Email" />
           </div>
-          <Button
-            className="w-full flex py-[0.625rem] px-4 justify-center items-center gap-[0.375rem] rounded-radius_md
-            !border-gray-300 shadow-md text-gray-700 text-Text-md font-md leading-6"
+          <Link href='/Sign-In/Set-Password'
+            className="w-full flex py-[0.625rem] px-4 justify-center items-center gap-[0.375rem] rounded-radius_md border
+            !border-gray-300 shadow-sm text-gray-700 text-Text-md font-md leading-6"
           >
             Reset password
-          </Button>
+          </Link>
 
-          <a  className="cursor-pointer w-full flex  justify-center items-center gap-[0.375rem]  text-gray-600 text-Text-sm font-md leading-5">
+          <Link href='/Sign-In'  className="cursor-pointer w-full flex  justify-center items-center gap-[0.375rem]  text-gray-600 text-Text-sm font-md leading-5">
           
             <svg
               className="w-[1.25rem] h-[1.25rem]"
@@ -52,7 +52,7 @@ const page = () => {
               />
             </svg>
             Back to log in
-          </a>
+          </Link>
         </form>
       </div>
     </div>

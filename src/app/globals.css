@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 * {
-  font-family: "GeneralSans-Variable" !important;
+  font-family: "GeneralSans-Variable";
 }
 @layer base {
   :root {

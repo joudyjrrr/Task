@@ -42,7 +42,7 @@ const config = {
           White: "#FFFFFF",
         },
         Gray: {
-          25: "#475467",
+          25: "#FCFCFD",
           50: "#F9FAFB",
           100: "#F2F4F7",
           200: "#EAECF0",
@@ -56,9 +56,9 @@ const config = {
           950: "0C111D",
         },
         Brand: {
-          25: "#FCFAFF",
+          25: "#FFF3EE",
           50: "#F9F5FF",
-          100: "#F4EBFF",
+          100: "#FEEACD",
           200: "#E9D7FE",
           300: "#D6BBFB",
           400: "#B692F6",

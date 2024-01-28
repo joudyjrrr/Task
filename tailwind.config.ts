@@ -26,7 +26,9 @@ const config = {
     },
     extend: {
       backgroundImage: {
-        "header-forget-bassword": "url('../..//Assets/SVGs/SingIn/Background pattern decorative.png')",
+        "header-forget-bassword": "url('../../Assets/SVGs/SingIn/Background pattern decorative.png')",
+        "Input-Search": "url('../../Assets/SVGs/Dashboard/search-lg.svg')",
+
       },
       colors: {
         border: "hsl(var(--border))",

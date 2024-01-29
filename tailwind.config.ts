@@ -25,8 +25,12 @@ const config = {
       },
     },
     extend: {
+      boxShadow: {
+        xs: "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+      },
       backgroundImage: {
-        "header-forget-bassword": "url('../..//Assets/SVGs/SingIn/Background pattern decorative.png')",
+        "header-forget-bassword":
+          "url('../..//Assets/SVGs/SingIn/Background pattern decorative.png')",
       },
       colors: {
         border: "hsl(var(--border))",

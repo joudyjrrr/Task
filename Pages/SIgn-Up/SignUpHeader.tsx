@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import PersonalDetails from "../../Assets/SVGs/SIgnUp/PersonalDetails.svg";
-import KitchenDetails from "../../Assets/SVGs/SIgnUp/KitchenDetails.svg";
-import WalletDetails from "../../Assets/SVGs/SIgnUp/WalletDetails.svg";
+import PersonalDetails from "../../Assets/SVGs/PersonalDetails.svg";
+import KitchenDetails from "../../Assets/SVGs/KitchenDetails.svg";
+import WalletDetails from "../../Assets/SVGs/WalletDetails.svg";
 
 const Elements = [
   {

@@ -32,9 +32,7 @@ const SignUpForm = () => {
             />
           </div>
           <div className="h-[4.375rem] flex flex-col justify-between">
-            {/* <Label>Email</Label>*/}
-              {/* <Input type="email" placeholder="olivia@untitledui.com" /> */}
-              <EmailInput label='Email' placeholder = 'olivia@untitledui.com'/>
+            <EmailInput label='Email' placeholder = 'olivia@untitledui.com'/>
             
           </div>
           <div className="h-[4.375rem] flex flex-col justify-between">

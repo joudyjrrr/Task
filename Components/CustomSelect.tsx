@@ -10,15 +10,16 @@ import {
 } from "@/components/ui/select";
 
 const CustomSelect: React.FC<{
+  placeholder : string,
   label: string;
   values: string[];
   TriggerClassName : string,
-}> = ({ values, label, TriggerClassName }) => {
+}> = ({ values, label, TriggerClassName, placeholder }) => {
   return (
     <>
       <Select>
         <SelectTrigger className={`${TriggerClassName}`}>
-          <SelectValue placeholder="US" />
+          <SelectValue placeholder={placeholder} />
         </SelectTrigger>
         <SelectContent className="bg-Base-White">
           <SelectGroup>

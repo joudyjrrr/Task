@@ -17,7 +17,7 @@ const config = {
         container_padding_desktop: "2rem",
         container_max_width_desktop: "80rem",
       },
-      
+
       screens: {
         tablet: "640px",
         laptop: "1024px",
@@ -26,12 +26,12 @@ const config = {
       },
     },
     extend: {
-      
+      boxShadow: {
+        xs: "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+      },
       backgroundImage: {
-        "gradiant":"linear-gradient(0deg, rgba(251, 97, 23, 0.04) 0%, rgba(251, 97, 23, 0.04) 100%), #FFF",
-        "header-forget-bassword": "url('../../Assets/SVGs/SingIn/Background pattern decorative.png')",
+        "header-forget-bassword": "url('../..//Assets/SVGs/SingIn/Background pattern decorative.png')",
         "Input-Search": "url('../../Assets/SVGs/Dashboard/search-lg.svg')",
-
       },
       colors: {
         border: "hsl(var(--border))",
@@ -134,37 +134,8 @@ const config = {
         md: "600",
       },
       spacing: {
-        0: "0rem",
-        0.5: "0.125rem",
-        1: "0.25rem",
-        2: "0.5rem",
-        3: "0.75rem",
-        4: "1rem",
-        5: "1.25rem",
-        6: "1.5rem",
-        8: "2rem",
-        10: "2.5rem",
-        12: "3rem",
-        16: "4rem",
-        20: "5rem",
-        24: "6rem",
-        32: "8rem",
-        40: "10rem",
-        48: "12rem",
-        56: "14rem",
-        64: "16rem",
-        80: "20rem",
-        96: "24rem",
-        120: "30rem",
-        140: "35rem",
-        160: "40rem",
-        180: "45rem",
-        192: "48rem",
-        256: "64rem",
-        320: "80rem",
-        360: "90rem",
-        400: "100rem",
-        480: "120rem",
+        11: "2.75rem",
+        22: "5.5rem",
       },
       borderRadius: {
         radius_none: "0rem",

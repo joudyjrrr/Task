@@ -16,10 +16,10 @@ const SignUp = () => {
               <Image src={Humy} alt={"Humy"} />
             </div>
             <div className="flex flex-col items-center justify-between">
-              <p className="flex items-center justify-center text-Text-sm font-md text-gray-950 font-medium leading-8">
+              <p className="flex items-center justify-center text-Text-sm text-gray-950 font-medium leading-8">
                 Create your Humy account
               </p>
-              <p className="flex items-center justify-center font-[440] text-Text-sm h-5 text-gray-400 font-[480] leading-8">
+              <p className="flex items-center justify-center text-Text-sm h-5 text-gray-400 font-[480] leading-8">
                 Sign up to get started
               </p>
             </div>

@@ -17,6 +17,7 @@ const config = {
         container_padding_desktop: "2rem",
         container_max_width_desktop: "80rem",
       },
+      
       screens: {
         tablet: "640px",
         laptop: "1024px",
@@ -25,7 +26,9 @@ const config = {
       },
     },
     extend: {
+      
       backgroundImage: {
+        "gradiant":"linear-gradient(0deg, rgba(251, 97, 23, 0.04) 0%, rgba(251, 97, 23, 0.04) 100%), #FFF",
         "header-forget-bassword": "url('../../Assets/SVGs/SingIn/Background pattern decorative.png')",
         "Input-Search": "url('../../Assets/SVGs/Dashboard/search-lg.svg')",
 
@@ -59,7 +62,7 @@ const config = {
           25: "#FFF3EE",
           50: "#F9F5FF",
           100: "#FEEACD",
-          200: "#E9D7FE",
+          200: "#FECE9B",
           300: "#D6BBFB",
           400: "#B692F6",
           500: "#9E77ED",

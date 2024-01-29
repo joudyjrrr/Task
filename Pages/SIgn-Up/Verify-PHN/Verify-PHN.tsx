@@ -5,14 +5,7 @@ import phone from "../../../Assets/SVGs/phone.svg";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
-import CustomSelect from "../../../Components/CustomSelect";
-import upload from "../../../Assets/SVGs/upload-cloud-02.svg";
-import info from "../../../Assets/SVGs/info-circle.svg";
-import PNG from "../../../Assets/SVGs/pngPage.svg";
-import Trash from "../../../Assets/SVGs/trash.svg";
-import Link from "next/link";
 import SVGBackGround from "../../../Components/SVGBackGround";
-import DragDrop from "../../../Components/DragDrop";
 import WhyDoThis from "../../../Components/WhyDoThis";
 
 const VerifyPHN = () => {
@@ -27,9 +20,7 @@ const VerifyPHN = () => {
           >
             {/* first */}
             <div className="flex flex-col justify-between items-center gap-6">
-              <SVGBackGround>
-                <Image src={phone} alt={"phone"} />
-              </SVGBackGround>
+              <SVGBackGround src={phone} alt="phone" />
               <div className="flex flex-col items-center justify-between">
                 <p className="flex items-center justify-center text-Text-sm font-md text-gray-950 leading-8">
                   Verify your phone number

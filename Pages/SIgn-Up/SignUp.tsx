@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import SignUpHeader from "./SignUpHeader";
-import Humy from "../../Assets/SVGs/SIgnUp/Humy.svg";
+import Humy from "../../Assets/SVGs/Humy.svg";
 import SignUpForm from "./SignUpForm";
 const SignUp = () => {
   return (

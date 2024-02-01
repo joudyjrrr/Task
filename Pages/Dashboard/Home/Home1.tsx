@@ -1,19 +1,22 @@
 import React from "react";
 import Image from "next/image";
-import Img from "../../Assets/SVGs/Dashboard/img1.jpg";
-import RwoRight from "../../Assets/SVGs/Dashboard/chevron-right.svg";
-import home from "../../Assets/SVGs/Dashboard/home-line.svg";
-import dot from "../../Assets/SVGs/Dashboard/dots-vertical.svg";
-import ArrowUp from "../../Assets/SVGs/Dashboard/arrow-up.svg";
+import Img from "../../../Assets/SVGs/Dashboard/img1.jpg";
+import RwoRight from "../../../Assets/SVGs/Dashboard/chevron-right.svg";
+import home from "../../../Assets/SVGs/Dashboard/home-line.svg";
+import dot from "../../../Assets/SVGs/Dashboard/dots-vertical.svg";
+import ArrowUp from "../../../Assets/SVGs/Dashboard/arrow-up.svg";
 import { Input } from "@/components/ui/input";
-import Ell from "../../Assets/SVGs/Dashboard/Ellipse 1075(1).svg";
-import EllGray from "../../Assets/SVGs/Dashboard/Ellipse 1075(2).svg";
-import Items from "../../Assets/SVGs/Dashboard/items.png";
-import Star1 from "../../Assets/SVGs/Dashboard/goldStar.svg";
-import Star2 from "../../Assets/SVGs/Dashboard/halfGoldStar.svg";
-import Star3 from "../../Assets/SVGs/Dashboard/Star background(1).svg";
-import Chexk from "../../Assets/SVGs/SingIn/check-circle.svg";
+import Ell from "../../../Assets/SVGs/Dashboard/Ellipse 1075(1).svg";
+import EllGray from "../../../Assets/SVGs/Dashboard/Ellipse 1075(2).svg";
+import Items from "../../../Assets/SVGs/Dashboard/items.png";
+import Star1 from "../../../Assets/SVGs/Dashboard/goldStar.svg";
+import Star2 from "../../../Assets/SVGs/Dashboard/halfGoldStar.svg";
+import Star3 from "../../../Assets/SVGs/Dashboard/Star background(1).svg";
 import { Button } from "@/components/ui/button";
+import Search from "../../../Assets/SVGs/Dashboard/search-lg.svg";
+
+
+
 const Home1 = () => {
   return (
     <div className="bg-gray-50 bg-cover bg-center px-[2.5rem] py-12  m-0 col-span-2">
@@ -76,7 +79,7 @@ const Home1 = () => {
           </div>
         </div>
 
-        <div className="flex  gap-4  flex-1 border-b pb-5 border-gray-300  ">
+        <div className="flex  gap-4  flex-1 border-b pb-5 border-gray-300  w-full">
           <div className="flex  flex-col p-[1.5rem] gap-5 w-[15rem] justify-between bg-white items-start rounded-xl border border-gray-200 shadow-sm">
             <div className="flex gap-14">
               <p className=" text-gray-600 text-Text-sm font-sm leading-5">
@@ -116,7 +119,7 @@ const Home1 = () => {
             </div>
           </div>
 
-          <div className="flex flex-col p-6 gap-5  justify-between bg-white items-start rounded-xl border border-gray-200 shadow-sm">
+          <div className="flex flex-grow flex-col p-6 gap-5  justify-between bg-white items-start rounded-xl border border-gray-200 shadow-sm">
             <div className="flex">
               <p className=" text-gray-600 text-Text-sm font-sm leading-5 flex-1">
                 Awaiting
@@ -129,7 +132,7 @@ const Home1 = () => {
             </div>
           </div>
 
-          <div className="flex flex-col p-6 gap-5  justify-between bg-white items-start rounded-xl border border-gray-200 shadow-sm">
+          <div className="flex flex-grow flex-col p-6 gap-5  justify-between bg-white items-start rounded-xl border border-gray-200 shadow-sm">
             <div className="flex">
               <p className=" text-gray-600 text-Text-sm font-sm leading-5 flex-1">
                 In Progress
@@ -143,9 +146,9 @@ const Home1 = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-start gap-5  border-b pb-5 border-gray-300">
-          <div className="flex  gap-32">
-            <div className="flex flex-col ">
+        <div className="flex flex-col items-start gap-5  border-b pb-5 border-gray-300 w-full">
+          <div className="flex w-full ">
+            <div className="flex flex-col flex-grow">
               <h1 className="text-gray-900 text-[1.125rem] font-md leading-7">
                 Active Orders
               </h1>
@@ -153,12 +156,15 @@ const Home1 = () => {
                 Orders from the oldest to the newest are listed
               </p>
             </div>
-            <Input
-              type="search"
-              placeholder="Search"
-              id="sr"
-              className="w-[20rem]"
-            />
+            <div className="flex w px-[0.875rem] items-center gap-2 rounded-lg border border-gray-300 shadow-sm ">
+              <Image alt="Avatr" src={Search} className="w-5 h-5 " />
+              <Input
+                type="search"
+                placeholder="Search in order name or number"
+                id="sr"
+                className=" border-none shadow-none !outline-none !focus:outline-none text-Gray-500 p-0"
+              />
+            </div>
           </div>
 
           <div className="flex p-2 items-center gap-5 rounded-radius_lg border border-gray-200 bg-gray-50 ">

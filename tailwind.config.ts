@@ -17,6 +17,7 @@ const config = {
         container_padding_desktop: "2rem",
         container_max_width_desktop: "80rem",
       },
+      
       screens: {
         tablet: "640px",
         laptop: "1024px",
@@ -25,12 +26,14 @@ const config = {
       },
     },
     extend: {
-      boxShadow: {
+            boxShadow: {
         xs: "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
       },
       backgroundImage: {
-        "header-forget-bassword":
-          "url('../..//Assets/SVGs/SingIn/Background pattern decorative.png')",
+        "gradiant":"linear-gradient(0deg, rgba(251, 97, 23, 0.04) 0%, rgba(251, 97, 23, 0.04) 100%), #FFF",
+        "header-forget-bassword": "url('../../Assets/SVGs/SingIn/Background pattern decorative.png')",
+        "Input-Search": "url('../../Assets/SVGs/Dashboard/search-lg.svg')",
+
       },
       colors: {
         border: "hsl(var(--border))",

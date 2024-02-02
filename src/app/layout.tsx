@@ -1,5 +1,4 @@
-
-"use client"
+"use client";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -23,15 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {!auth ? (
-          <SignIn SetAuth={SetAuth} />
-          
-        ) : (
-          <div className="grid gap-0 grid-cols-[auto,1fr,1fr]">
-            <SideBar />
-            {children}
-          </div>
-        )}
+        {children}
+        {/* <div className="grid gap-0 grid-cols-[auto,1fr,1fr]">
+          <SideBar />
+          {children}
+        </div> */}
       </body>
     </html>
   );

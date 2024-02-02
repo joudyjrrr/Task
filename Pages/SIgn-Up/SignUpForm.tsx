@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import PhoneNumberInput from "../../Components/PhoneNumberInput";
 import { Checkbox } from "@/components/ui/checkbox";
-import EmailInput from '../../Components/EmailInput';
+import EmailInput from "../../Components/EmailInput";
 import {
   Select,
   SelectContent,
@@ -23,7 +23,10 @@ const SignUpForm = () => {
         <div className="grid grid-cols-1 grid-rows-4 !auto-rows-[auto_auto_auto_auto] gap-6 ">
           <div className="h-[4.375rem] flex flex-col justify-between">
             <Label>Full Name</Label>
-            <Input placeholder="Full Legal name" />
+            <Input
+              placeholder="Full Legal name"
+              className="border-Gray-300 border"
+            />
           </div>
           <div className="h-[4.375rem] flex flex-col justify-between">
             <PhoneNumberInput
@@ -32,8 +35,7 @@ const SignUpForm = () => {
             />
           </div>
           <div className="h-[4.375rem] flex flex-col justify-between">
-            <EmailInput label='Email' placeholder = 'olivia@untitledui.com'/>
-            
+            <EmailInput label="Email" placeholder="olivia@untitledui.com" />
           </div>
           <div className="h-[4.375rem] flex flex-col justify-between">
             <Label>Type of Business</Label>

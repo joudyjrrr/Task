@@ -5,9 +5,9 @@ import Humy from "../../Assets/SVGs/Humy.svg";
 import SignUpForm from "./SignUpForm";
 const SignUp = () => {
   return (
-    <div className="w-full hight-full bg-Gray-25 ">
+    <div className="w-full hight-full bg-Gray-25 flex flex-col gap-[4.3125rem]">
       <SignUpHeader />
-      <div className="mt-[4.313rem] w-full">
+      <div className="w-full">
         <div
           className={`w-[480px] m-auto bg-Base-White p-10 bg-[url(../../Assets/Images/Sign_Up/Background.png)] bg-no-repeat bg-top rounded-[0.625rem] shadow-sm flex flex-col items-center`}
         >

@@ -11,7 +11,7 @@ import WhyDoThis from "../../../Components/WhyDoThis";
 const VerifyPHN = () => {
   return (
     <>
-      <div className="w-full hight-full bg-Gray-25 flex flex-col justify-between items-center gap-[3.125rem]">
+      <div className="w-full hight-full bg-Gray-25 flex flex-col justify-between items-center gap-[6.6875rem]">
         <SignUpHeader />
         <div className="w-full">
           {/* card */}

@@ -19,7 +19,7 @@ import Search from "../../../Assets/SVGs/Dashboard/search-lg.svg";
 
 const Home1 = () => {
   return (
-    <div className="bg-gray-50 bg-cover bg-center px-[2.5rem] py-12  m-0 col-span-2">
+    <div className="bg-gray-50 bg-cover bg-center px-[2.5rem] py-12  m-0 col-span-2 w-full">
       <div className="flex items-start rounded-[0.75rem] bg-white shadow-sm mr-28 mb-12">
         <Image
           src={Img}

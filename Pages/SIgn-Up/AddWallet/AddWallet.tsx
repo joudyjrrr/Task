@@ -11,7 +11,7 @@ import CustomSelect from "../../../Components/CustomSelect";
 const AddWallet = () => {
   return (
     <>
-      <div className="w-full hight-full bg-Gray-25 flex flex-col justify-between items-center gap-[3.125rem]">
+      <div className="w-full hight-full bg-Gray-25 flex flex-col justify-between items-center gap-[6.4375rem]">
         <SignUpHeader />
         <div className="w-full">
           {/* card */}

@@ -3,6 +3,7 @@ import Image from "next/image";
 import PersonalDetails from "../../Assets/SVGs/PersonalDetails.svg";
 import KitchenDetails from "../../Assets/SVGs/KitchenDetails.svg";
 import WalletDetails from "../../Assets/SVGs/WalletDetails.svg";
+import SVGBackGround from "../../Components/SVGBackGround";
 
 const Elements = [
   {
@@ -25,25 +26,25 @@ const Elements = [
 const SignUpHeader = () => {
   return (
     <div className="w-full h-full">
-      <span className="h-[9.75rem] w-full py-6 flex justify-center items-center">
-        <ul className=" h-[6.75rem] w-[63rem] p-2 flex items-center justify-between">
+      <span className=" w-full py-6 flex flex-col justify-center items-center">
+        <ul className="p-2 flex items-start justify-between gap-4">
           {Elements.map((element, idx) => (
             <li
               key={idx}
-              className="flex justify-between flex-col items-center h-full"
+              className="flex flex-col w-80 items-center gap-3 flex-shrink-0"
             >
-              <div className="w-10 h-10 border bg-Base-White border-gray-200 border-solid rounded-lg flex justify-center items-center">
-                <Image
-                  src={element.image}
-                  alt={element.Content1}
-                  className="w-5 h-5"
-                />
+              <div
+                className={`relative z-40 after:content-[' '] ${
+                  idx === 2 ? "" : "after:absolute"
+                } after:top-[calc(50%-1px)] after:left-1/2 after:h-0.5 after:w-[21rem] after:bg-[#EAECF0] after:-z-10`}
+              >
+                <SVGBackGround src={element.image} alt={element.image} />
               </div>
-              <div className="flex justify-center items-center flex-col">
-                <p className="text-Text-sm font-md text-gray-800">
+              <div className="">
+                <p className="font-semibold leading-5 text-Text-sm text-gray-800 text-center">
                   {element.Content1}
                 </p>
-                <p className="font-[440] text-Text-sm h-5 text-gray-600">
+                <p className="font-[440] leading-5 text-gray-600 text-Text-sm">
                   {element.Content2}
                 </p>
               </div>

@@ -16,7 +16,8 @@ const PhoneNumberInput: React.FC<Type> = ({ label, placeholder }) => {
         <CustomSelect
           TriggerClassName="w-[3.5rem] py-[0.625rem] pl-[0.875rem] shadow-none pr-0 border-0 drop-shadow-none outline-none font-medium text-gray-700"
           label="Us"
-          values={["t", "t", "t", "t"]}
+          values={["t1", "t2", "t3", "t4"]}
+          placeholder="US"
         />
         <Input
           className="border-none shadow-none !outline-none !fne-none"

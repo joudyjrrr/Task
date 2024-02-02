@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-
 import SideBar from "../../Layout/SideBar";
 import Image from "next/image";
 import Img from "../../Assets/SVGs/Dashboard/img1.jpg";
@@ -20,7 +19,7 @@ import Home1 from "../../Pages/Home/Home1";
 export default function Home() {
   return (
     <>
-      <div className="grid gap-0 grid-cols-[auto,1fr,1fr]">
+      <div className="grid gap-0 grid-cols-[auto,1fr,1fr] ">
         <SideBar />
         <Home1 />
       </div>

@@ -1,10 +1,9 @@
 import React from "react";
-import SignUp from "../../../Pages/Sign-Up/SignUp";
-
+import Offers from "../../../Pages/Offers/Offers";
 const page = () => {
   return (
     <>
-      <SignUp />
+      <Offers />
     </>
   );
 };

@@ -1,0 +1,77 @@
+import dashboard from "../Assets/SVGs/Dashboard/home-line.svg";
+import orders from "../Assets/SVGs/Orders.svg";
+import items from "../Assets/SVGs/Items.svg";
+import offers from "../Assets/SVGs/Offers.svg";
+import promotions from "../Assets/SVGs/Promotions.svg";
+import coupon from "../Assets/SVGs/Coupon.svg";
+import stories from "../Assets/SVGs/Stories.svg";
+import videos from "../Assets/SVGs/Videos.svg";
+import couriers from "../Assets/SVGs/Couriers.svg";
+import feedbacks from "../Assets/SVGs/Feedbacks.svg";
+import wallet from "../Assets/SVGs/Wallet.svg";
+import support from "../Assets/SVGs/Support.svg";
+import setting from "../Assets/SVGs/Setting.svg";
+
+export const Links1 = () => {
+  const links = [
+    {
+      name: "Dashboard",
+      icon: dashboard,
+    },
+    {
+      name: "Orders",
+      icon: orders,
+    },
+    {
+      name: "Items",
+      icon: items,
+    },
+    {
+      name: "Offers",
+      icon: offers,
+    },
+    {
+      name: "Promotions",
+      icon: promotions,
+    },
+    {
+      name: "Coupons",
+      icon: coupon,
+    },
+    {
+      name: "Stories",
+      icon: stories,
+    },
+    {
+      name: "Videos",
+      icon: videos,
+    },
+    {
+      name: "Couriers",
+      icon: couriers,
+    },
+    {
+      name: "Feedbacks",
+      icon: feedbacks,
+    },
+    {
+      name: "Wallet",
+      icon: wallet,
+    },
+  ];
+
+  return links;
+};
+export const Links2 = () => {
+  const links = [
+    {
+      name: "Support",
+      icon: support,
+    },
+    {
+      name: "Setting",
+      icon: setting,
+    },
+  ];
+  return links;
+};

@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import SideBar from "../../Pages/Layout/SideBar/SideBar";
+import SideBar from "../../Layout/SideBar";
 import SignIn from "./Sign-In/page";
 import { useState } from "react";
 
@@ -22,11 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}
-        {/* <div className="grid gap-0 grid-cols-[auto,1fr,1fr]">
+        <div className="grid gap-0 grid-cols-[auto,1fr,1fr]">
           <SideBar />
           {children}
-        </div> */}
+        </div>
       </body>
     </html>
   );

@@ -11,12 +11,14 @@ import feedbacks from "../Assets/SVGs/Feedbacks.svg";
 import wallet from "../Assets/SVGs/Wallet.svg";
 import support from "../Assets/SVGs/Support.svg";
 import setting from "../Assets/SVGs/Setting.svg";
+import { link } from "fs";
 
 export const Links1 = () => {
   const links = [
     {
       name: "Dashboard",
       icon: dashboard,
+      link:"/",
     },
     {
       name: "Orders",
@@ -25,18 +27,22 @@ export const Links1 = () => {
     {
       name: "Items",
       icon: items,
+      link:"/items"
     },
     {
       name: "Offers",
       icon: offers,
+      link:"/Offers"
     },
     {
       name: "Promotions",
       icon: promotions,
+      link:"/promotions"
     },
     {
       name: "Coupons",
       icon: coupon,
+      link:"/coupon"
     },
     {
       name: "Stories",

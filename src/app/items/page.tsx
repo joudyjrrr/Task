@@ -1,12 +1,8 @@
 import React from "react";
-import Items from "../../../Pages/Dashboard/Items/Tables";
+import Items from "../../../Pages/Dashboard/Items/index";
 
 const page = () => {
-  return (
-    
-      <Items />
-   
-  );
+  return <Items />;
 };
 
 export default page;

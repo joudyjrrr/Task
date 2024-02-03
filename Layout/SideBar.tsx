@@ -1,7 +1,6 @@
 import React from "react";
 import Logo from "../Assets/SVGs/SingIn/humy.svg";
-import Group from "..//Assets/SVGs/SingIn/Group 110.svg";
-import Home from "../Assets/SVGs/Dashboard/home-line.svg";
+import Group from "../Assets/SVGs/SingIn/Group 110.svg";
 import support from ".././Assets/Images/technical-It-img.jpg";
 import Image from "next/image";
 import SearchInput from "../Components/SearchInput";
@@ -34,7 +33,7 @@ const page = () => {
               <div className="flex gap-2 px-2 py-3 justify-start items-center w-full">
                 <Image src={link.icon} alt="avatar" />
                 <Link
-                  href={`/${link.name}`}
+                  href={`${link.link}`}
                   className="text-gray-700 text-Text-md leading-6 font-medium"
                 >
                   {link.name}

@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { FC } from "react";
 import Avatar from "../../../Assets/SVGs/SingIn/Avatar.png";
 import Star from "../../../Assets/SVGs/SingIn/Star.svg";
 import Logo from "../../../Assets/SVGs/SingIn/humy.svg";
@@ -13,12 +13,16 @@ import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-// type Ilogin = {
-//   email: string;
-//   password: string;
-// };
-const page = () => {
-  // const form = useForm<Ilogin>();
+import { useRouter } from "next/navigation";
+type Ilogin = {
+  email: string;
+  password: string;
+};
+const page: FC<{
+  SetAuth: (arg: boolean) => void;
+}> = ({ SetAuth }) => {
+  const form = useForm<Ilogin>();
+  const router = useRouter();
   const Stars = [
     {
       Img: Star,
@@ -108,7 +112,13 @@ const page = () => {
                 </Link>
               </div>
 
-              <Button className="w-full text-white flex py-[0.625rem] px-4 justify-center items-center gap-[.375rem] rounded-radius_md bg-Brand-600 border border-Brand-600 shadow-sm">
+              <Button
+                onClick={() => {
+                  SetAuth(true);
+                  router.push("/");
+                }}
+                className="w-full text-white flex py-[0.625rem] px-4 justify-center items-center gap-[.375rem] rounded-radius_md bg-Brand-600 border border-Brand-600 shadow-sm"
+              >
                 Submit
               </Button>
             </form>
@@ -116,7 +126,10 @@ const page = () => {
               <p className="text-gray-600 text-Text-sm  font-xs leading-5 self-stretch">
                 Don’t have an account?
               </p>
-              <a className="text-Brand-700 text-Text-sm font-md leading-5 ">
+              <a
+                className="text-Brand-700 text-Text-sm font-md leading-5 cursor-pointer"
+                onClick={() => router.push("/Sign-Up")}
+              >
                 Sign up
               </a>
             </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import {
   Select,
   SelectContent,
@@ -10,16 +10,18 @@ import {
 } from "@/components/ui/select";
 
 const CustomSelect: React.FC<{
-  placeholder: string;
-  label: string;
+  placeholder?: string;
+  label?: string;
   values: string[];
-  TriggerClassName: string;
-}> = ({ values, label, TriggerClassName, placeholder }) => {
+  children?: ReactNode;
+  TriggerClassName?: string;
+}> = ({ values, label, TriggerClassName, placeholder, children }) => {
   return (
     <>
       <Select>
-        <SelectTrigger className={`${TriggerClassName}`}>
+        <SelectTrigger className={`${TriggerClassName} border border-gray-300`}>
           <SelectValue placeholder={placeholder} />
+          {children}
         </SelectTrigger>
         <SelectContent className="bg-Base-White">
           <SelectGroup>

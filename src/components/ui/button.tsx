@@ -21,7 +21,7 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
       },
       Color: {
-        default: "bg-Brand-600",
+        Orang: "bg-Brand-600",
         LightBrand: "bg-Brand-600",
         DarkBrand: "bg-Brand-700",
       },

@@ -8,9 +8,12 @@ import { Input } from "@/components/ui/input";
 import CustomSelect from "../../Components/CustomSelect";
 import MulriSelect from "../../Components/MultiSelect/MulriSelect";
 import { Button } from "@/components/ui/button";
+import SideBar from "../../Layout/SideBar";
 
 const EditCategory = () => {
   return (
+    <div className="grid gap-0 grid-cols-[auto,1fr,1fr]">
+    <SideBar />
     <div className="px-[2.5rem] py-12  m-0 col-span-2">
       <div className="flex flex-col gap-8 items-start w-full">
         <div className="flex flex-col flex-grow gap-5 items-start border-b border-gray-300 pb-5 w-full">
@@ -61,6 +64,7 @@ const EditCategory = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

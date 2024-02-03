@@ -18,8 +18,11 @@ import {
 import { Checkbox } from "@/components/ui/checkbox";
 import Avatar from "../../../Assets/SVGs/SingIn/Avatar.png";
 import { Button } from "@/components/ui/button";
+import SideBar from "../../../Layout/SideBar";
 const Hom2 = () => {
   return (
+    <div className="grid gap-0 grid-cols-[auto,1fr,1fr]">
+    <SideBar />
     <div className="px-[2.5rem] py-12  m-0 col-span-2">
       <div className="flex flex-col gap-6 items-start w-full">
         <div className="flex flex-col gap-5 items-start border-b border-gray-300 pb-5 w-full">
@@ -241,6 +244,7 @@ const Hom2 = () => {
           </Table>
         </div>
       </div>
+    </div>
     </div>
   );
 };

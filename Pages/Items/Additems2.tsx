@@ -12,10 +12,13 @@ import AddRE from "../../Assets/SVGs/Dashboard/add-rectangle.svg";
 import { Button } from "@/components/ui/button";
 import MulriSelect from "../../Components/MultiSelect/MulriSelect";
 import { useRouter } from "next/navigation";
+import SideBar from "../../Layout/SideBar";
 
 const Additems2 = () => {
   const router = useRouter();
   return (
+    <div className="grid gap-0 grid-cols-[auto,1fr,1fr]">
+    <SideBar/>
     <div className="px-[2.5rem] py-12  m-0 col-span-2">
       <div className="flex flex-col gap-8 items-start w-full">
         <div className="flex flex-col flex-grow gap-5 items-start border-b border-gray-300 pb-5 w-full">
@@ -133,6 +136,7 @@ const Additems2 = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

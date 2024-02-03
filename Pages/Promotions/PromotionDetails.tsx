@@ -3,8 +3,11 @@ import Image from "next/image";
 import home from "../../Assets/SVGs/Dashboard/home-line.svg";
 import RwoRight from "../../Assets/SVGs/Dashboard/chevron-right.svg";
 import Icon from "../../Assets/SVGs/Dashboard/Icon(3).svg";
+import SideBar from "../../Layout/SideBar";
 const PromotionDetails = () => {
   return (
+    <div className="grid gap-0 grid-cols-[auto,1fr,1fr]">
+    <SideBar />
     <div className="px-[2.5rem] py-12  m-0 col-span-2">
       <div className="flex flex-col gap-8 items-start w-full">
         <div className="flex flex-col flex-grow gap-5 items-start border-b border-gray-300 pb-5 w-full">
@@ -74,6 +77,7 @@ const PromotionDetails = () => {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 };

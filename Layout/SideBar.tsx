@@ -10,7 +10,7 @@ import x from "../Assets/SVGs/X.svg";
 import avatart from "../Assets/SVGs/Dashboard/Olivia Rhye.png";
 import logout from "../Assets/SVGs/logout.svg";
 import { Links1, Links2 } from "./links";
-const page = () => {
+const SideBar = () => {
   const links = Links1();
   const links2 = Links2();
   return (
@@ -118,4 +118,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default SideBar;

@@ -51,9 +51,9 @@ const MulriSelect = () => {
     }),
     option: (style) => ({
       ...style,
-      ':hover':{
-        backgroundColor:"#F9FAFB"
-      }
+      ":hover": {
+        backgroundColor: "#F9FAFB",
+      },
     }),
   };
 

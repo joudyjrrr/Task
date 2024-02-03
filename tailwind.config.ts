@@ -35,6 +35,7 @@ const config = {
           "linear-gradient(0deg, rgba(251, 97, 23, 0.04) 0%, rgba(251, 97, 23, 0.04) 100%), #FFF",
         "header-forget-bassword":
           "url('../../Assets/SVGs/SingIn/Background pattern decorative.png')",
+        "bg-home": "url('../../Assets/SVGs/Dashboard/img1.jpg')",
         "Input-Search": "url('../../Assets/SVGs/Dashboard/search-lg.svg')",
       },
       colors: {
@@ -66,7 +67,7 @@ const config = {
           25: "#FFF3EE",
           50: "#F9F5FF",
           100: "#FEEACD",
-          200: "#FECE9B",
+          200: "#FB5607",
           300: "#E24D06",
           400: "#B692F6",
           500: "#9E77ED",

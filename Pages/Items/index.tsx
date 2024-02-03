@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import home from "../../../Assets/SVGs/Dashboard/home-line.svg";
-import RwoRight from "../../../Assets/SVGs/Dashboard/chevron-right.svg";
-import Tarch from "../../../Assets/SVGs/Dashboard/Buttons/trash-01.svg";
-import Edit from "../../../Assets/SVGs/Dashboard/Buttons/edit-01.svg";
+import home from "../../Assets/SVGs/Dashboard/home-line.svg";
+import RwoRight from "../../Assets/SVGs/Dashboard/chevron-right.svg";
+import Tarch from "../../Assets/SVGs/Dashboard/Buttons/trash-01.svg";
+import Edit from "../../Assets/SVGs/Dashboard/Buttons/edit-01.svg";
 import {
   Table,
   TableBody,
@@ -12,15 +12,12 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table";
-import { Checkbox } from "@/components/ui/checkbox";
-import Avatar from "../../../Assets/SVGs/SingIn/Avatar.png";
+} from "@/components/ui/table";;
+import Avatar from "../../Assets/SVGs/SingIn/Avatar.png";
 import { Button } from "@/components/ui/button";
-import Circle from "../../../Assets/SVGs/Dashboard/Buttons/info-circle.svg";
-import dot from "../../../Assets/SVGs/Dashboard/dots-vertical.svg";
+import dot from "../../Assets/SVGs/Dashboard/dots-vertical.svg";
 import { Switch } from "@/components/ui/switch";
-import DropDwon from "../../../Components/DropDwon";
-import Link from "next/link";
+import DropDwon from "../../Components/DropDwon";
 import { useRouter } from "next/navigation";
 
 const Tables = () => {

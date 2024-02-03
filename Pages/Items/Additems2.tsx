@@ -1,16 +1,16 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import home from "../../../Assets/SVGs/Dashboard/home-line.svg";
-import RwoRight from "../../../Assets/SVGs/Dashboard/chevron-right.svg";
-import DragDrop from "../../../Components/DragDrop";
+import home from "../../Assets/SVGs/Dashboard/home-line.svg";
+import RwoRight from "../../Assets/SVGs/Dashboard/chevron-right.svg";
+import DragDrop from "../../Components/DragDrop";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
-import CustomSelect from "../../../Components/CustomSelect";
-import AddRE from "../../../Assets/SVGs/Dashboard/add-rectangle.svg";
+import CustomSelect from "../../Components/CustomSelect";
+import AddRE from "../../Assets/SVGs/Dashboard/add-rectangle.svg";
 import { Button } from "@/components/ui/button";
-import MulriSelect from "../../../Components/MultiSelect/MulriSelect";
+import MulriSelect from "../../Components/MultiSelect/MulriSelect";
 import { useRouter } from "next/navigation";
 
 const Additems2 = () => {
@@ -41,7 +41,6 @@ const Additems2 = () => {
           </div>
         </div>
         <div className="w-full flex flex-col gap-8">
-          <MulriSelect />
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-[0.375rem]">
               <Label>Item Picture</Label>

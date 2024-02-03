@@ -15,16 +15,14 @@ import Star3 from "../../../Assets/SVGs/Dashboard/Star background(1).svg";
 import { Button } from "@/components/ui/button";
 import Search from "../../../Assets/SVGs/Dashboard/search-lg.svg";
 
-
-
 const Home1 = () => {
   return (
-    <div className="bg-gray-50 bg-cover bg-center px-[2.5rem] py-12  m-0 col-span-2 w-full">
-      <div className="flex items-start rounded-[0.75rem] bg-white shadow-sm mr-28 mb-12">
+    <div className="bg-gray-50 bg-cover bg-center px-[2.5rem] py-12   col-span-2 w-full">
+      <div className="flex h-[10rem]  gap-8 items-start rounded-[0.75rem] bg-white shadow-sm mr-28 mb-12">
         <Image
           src={Img}
           alt="img"
-          className="w-[14.9375rem] h-[10rem] rounded-tl-[0.75rem] rounded-bl-[0.75rem] object-cover"
+          className="h-full basis-[24%] rounded-tl-[0.75rem] rounded-bl-[0.75rem]"
         />
         <div className="flex flex-col p-6 gap-5">
           <div>
@@ -229,8 +227,8 @@ const Home1 = () => {
               </p>
             </div>
 
-            <div className="flex w-12 h-12 p-[0.46875rem] justify-center relative rounded-46.82813rem  ">
-              <div className="flex flex-col gap-[0.1875rem] absolute top-2 left-2 justify-center text-center">
+            <div className="w-12 h-12 flex justify-center relative rounded-[50%] px-2 border-[1.5px] border-gray-300">
+              <div className="flex flex-col gap-[0.1875rem]   justify-center items-center text-center">
                 <p className="text-gray-400 text-Text-sm font-[460] leading-[0.9375rem]">
                   2
                 </p>
@@ -238,11 +236,14 @@ const Home1 = () => {
                   min
                 </p>
               </div>
-              <Image src={Ell} alt="img" className="w-12 h-12" />
+              <div
+                className="absolute top-0 left-0 w-full h-full rounded-[50%] border-[1.5px] border-Brand-200"
+                style={{ clipPath: "circle(80% at 100% 50%)" }}
+              ></div>
             </div>
           </div>
 
-          <div className="flex p-4 justify-between w-[22.5rem] items-center rounded-radius_lg border border-Brand-600 bg-Brand-200 bg-opacity-50  ">
+          <div className="flex p-4 justify-between w-[22.5rem] items-center rounded-radius_lg border border-Brand-600 bg-Brand-25 bg-opacity-50  ">
             <div className="flex gap-2 items-center">
               <div className="w-[2.5rem] h-[2.5rem] rounded-lg  border border-gray-100 bg-Gray-25 shadow-sm  ">
                 {" "}
@@ -265,17 +266,19 @@ const Home1 = () => {
                 Bad Experience
               </p>
             </div>
-
-            <div className="flex w-12 h-12 p-[0.46875rem] justify-center relative rounded-46.82813rem  ">
-              <div className="flex flex-col gap-[0.1875rem] absolute top-2 left-2 justify-center text-center">
+            <div className="w-12 h-12 flex justify-center relative rounded-[50%] px-2 border-[1.5px] border-gray-300">
+              <div className="flex flex-col gap-[0.1875rem]   justify-center items-center text-center">
                 <p className="text-gray-400 text-Text-sm font-[460] leading-[0.9375rem]">
-                  2
+                  3
                 </p>
                 <p className="text-gray-400 text-Text-sm font-[460] leading-[0.9375rem]">
                   min
                 </p>
               </div>
-              <Image src={Ell} alt="img" className="w-12 h-12" />
+              <div
+                className="absolute top-0 left-0 w-full h-full rounded-[50%] border-[1.5px] border-Brand-200"
+                style={{ clipPath: "circle(80% at 100% 50%)" }}
+              ></div>
             </div>
           </div>
 
@@ -297,16 +300,19 @@ const Home1 = () => {
               </p>
             </div>
 
-            <div className="flex w-12 h-12 p-[0.46875rem] justify-center relative rounded-46.82813rem  ">
-              <div className="flex flex-col gap-[0.1875rem] absolute top-2 left-2 justify-center text-center">
+            <div className="w-12 h-12 flex justify-center relative rounded-[50%] px-2 border-[1.5px] border-gray-300">
+              <div className="flex flex-col gap-[0.1875rem]   justify-center items-center text-center">
                 <p className="text-gray-400 text-Text-sm font-[460] leading-[0.9375rem]">
-                  2
+                  7
                 </p>
                 <p className="text-gray-400 text-Text-sm font-[460] leading-[0.9375rem]">
                   min
                 </p>
               </div>
-              <Image src={Ell} alt="img" className="w-12 h-12" />
+              <div
+                className="absolute top-0 left-0 w-full h-full rounded-[50%] border-[1.5px] border-Brand-200"
+                style={{ clipPath: "circle(80% at 100% 50%)" }}
+              ></div>
             </div>
           </div>
 
@@ -328,16 +334,19 @@ const Home1 = () => {
               </p>
             </div>
 
-            <div className="flex w-12 h-12 p-[0.46875rem] justify-center relative rounded-46.82813rem  ">
-              <div className="flex flex-col gap-[0.1875rem] absolute top-2 left-2 justify-center text-center">
+            <div className="w-12 h-12 flex justify-center relative rounded-[50%] px-2 border-[1.5px] border-gray-300">
+              <div className="flex flex-col gap-[0.1875rem]   justify-center items-center text-center">
                 <p className="text-gray-400 text-Text-sm font-[460] leading-[0.9375rem]">
-                  2
+                  12
                 </p>
                 <p className="text-gray-400 text-Text-sm font-[460] leading-[0.9375rem]">
                   min
                 </p>
               </div>
-              <Image src={EllGray} alt="img" className="w-12 h-12" />
+              <div
+                className="absolute top-0 left-0 w-full h-full rounded-[50%] border-[1.5px] border-Brand-200"
+                style={{ clipPath: "circle(80% at 100% 50%)" }}
+              ></div>
             </div>
           </div>
 
@@ -359,16 +368,19 @@ const Home1 = () => {
               </p>
             </div>
 
-            <div className="flex w-12 h-12 p-[0.46875rem] justify-center relative rounded-46.82813rem  ">
-              <div className="flex flex-col gap-[0.1875rem] absolute top-2 left-2 justify-center text-center">
+            <div className="w-12 h-12 flex justify-center relative rounded-[50%] px-2 border-[1.5px] border-gray-300">
+              <div className="flex flex-col gap-[0.1875rem]   justify-center items-center text-center">
                 <p className="text-gray-400 text-Text-sm font-[460] leading-[0.9375rem]">
-                  2
+                  12
                 </p>
                 <p className="text-gray-400 text-Text-sm font-[460] leading-[0.9375rem]">
                   min
                 </p>
               </div>
-              <Image src={EllGray} alt="img" className="w-12 h-12" />
+              <div
+                className="absolute top-0 left-0 w-full h-full rounded-[50%] border-[1.5px] border-gray-400"
+                style={{ clipPath: "circle(80% at 100% 50%)" }}
+              ></div>
             </div>
           </div>
           <div className="flex p-4 justify-between w-[22.5rem] items-center rounded-radius_lg border border-gray-100 bg-white shadow-sm ">
@@ -389,16 +401,19 @@ const Home1 = () => {
               </p>
             </div>
 
-            <div className="flex w-12 h-12 p-[0.46875rem] justify-center relative rounded-46.82813rem  ">
-              <div className="flex flex-col gap-[0.1875rem] absolute top-2 left-2 justify-center text-center">
+            <div className="w-12 h-12 flex justify-center relative rounded-[50%] px-2 border-[1.5px] border-gray-300">
+              <div className="flex flex-col gap-[0.1875rem]   justify-center items-center text-center">
                 <p className="text-gray-400 text-Text-sm font-[460] leading-[0.9375rem]">
-                  2
+                  12
                 </p>
                 <p className="text-gray-400 text-Text-sm font-[460] leading-[0.9375rem]">
                   min
                 </p>
               </div>
-              <Image src={EllGray} alt="img" className="w-12 h-12" />
+              <div
+                className="absolute top-0 left-0 w-full h-full rounded-[50%] border-[1.5px] border-gray-400"
+                style={{ clipPath: "circle(80% at 100% 50%)" }}
+              ></div>
             </div>
           </div>
           <div className="flex p-4 justify-between w-[22.5rem] items-center rounded-radius_lg border border-gray-100 bg-white shadow-sm ">
@@ -418,17 +433,19 @@ const Home1 = () => {
                 Arda M.
               </p>
             </div>
-
-            <div className="flex w-12 h-12 p-[0.46875rem] justify-center relative rounded-46.82813rem  ">
-              <div className="flex flex-col gap-[0.1875rem] absolute top-2 left-2 justify-center text-center">
+            <div className="w-12 h-12 flex justify-center relative rounded-[50%] px-2 border-[1.5px] border-gray-300">
+              <div className="flex flex-col gap-[0.1875rem]   justify-center items-center text-center">
                 <p className="text-gray-400 text-Text-sm font-[460] leading-[0.9375rem]">
-                  2
+                  12
                 </p>
                 <p className="text-gray-400 text-Text-sm font-[460] leading-[0.9375rem]">
                   min
                 </p>
               </div>
-              <Image src={EllGray} alt="img" className="w-12 h-12" />
+              <div
+                className="absolute top-0 left-0 w-full h-full rounded-[50%] border-[1.5px] border-gray-400"
+                style={{ clipPath: "circle(80% at 100% 50%)" }}
+              ></div>
             </div>
           </div>
         </div>

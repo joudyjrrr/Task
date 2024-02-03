@@ -1,12 +1,12 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import home from "../../../Assets/SVGs/Dashboard/home-line.svg";
-import RwoRight from "../../../Assets/SVGs/Dashboard/chevron-right.svg";
+import home from "../../Assets/SVGs/Dashboard/home-line.svg";
+import RwoRight from "../../Assets/SVGs/Dashboard/chevron-right.svg";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
-import CustomSelect from "../../../Components/CustomSelect";
-import MulriSelect from "../../../Components/MultiSelect/MulriSelect";
+import CustomSelect from "../../Components/CustomSelect";
+import MulriSelect from "../../Components/MultiSelect/MulriSelect";
 import { Button } from "@/components/ui/button";
 
 const EditCategory = () => {

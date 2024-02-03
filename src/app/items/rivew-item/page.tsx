@@ -1,5 +1,5 @@
 import React from 'react'
-import ReviwItem from '../../../../Pages/Dashboard/Items/ReviwItem'
+import ReviwItem from '../../../../Pages/Items/ReviwItem'
 
 const page = () => {
   return (

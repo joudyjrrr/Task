@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import home from "../../../Assets/SVGs/Dashboard/home-line.svg";
-import RwoRight from "../../../Assets/SVGs/Dashboard/chevron-right.svg";
-import Img from "../../../Assets/SVGs/Dashboard/image 1.png";
+import home from "../../Assets/SVGs/Dashboard/home-line.svg";
+import RwoRight from "../../Assets/SVGs/Dashboard/chevron-right.svg";
+import Img from "../../Assets/SVGs/Dashboard/image 1.png";
 import { Button } from "@/components/ui/button";
 
 const ReviwItem = () => {

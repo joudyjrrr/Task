@@ -42,7 +42,7 @@ export const Links1 = () => {
     {
       name: "Coupons",
       icon: coupon,
-      link:"/coupon"
+      link:"/Coupons"
     },
     {
       name: "Stories",

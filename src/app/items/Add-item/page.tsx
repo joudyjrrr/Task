@@ -1,5 +1,5 @@
 import React from 'react'
-import AddItems from '../../../../Pages/Dashboard/Items/AddItems'
+import AddItems from '../../../../Pages/Items/AddItems'
 
 
 const page = () => {

@@ -2,17 +2,17 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import home from "../../Assets/SVGs/Dashboard/home-line.svg";
-import RwoRight from "../../../Assets/SVGs/Dashboard/chevron-right.svg";
-import Pl from "../../../Assets/SVGs/Dashboard/placeholder.svg";
-import Pl2 from "../../../Assets/SVGs/Dashboard/placeholder(1).svg";
-import Help from "../../../Assets/SVGs/Dashboard/help-circle.svg";
-import Close from "../../../Assets/SVGs/Dashboard/x-close.svg";
+import RwoRight from "../../Assets/SVGs/Dashboard/chevron-right.svg";
+import Pl from "../../Assets/SVGs/Dashboard/placeholder.svg";
+import Pl2 from "../../Assets/SVGs/Dashboard/placeholder(1).svg";
+import Help from "../../Assets/SVGs/Dashboard/help-circle.svg";
+import Close from "../../Assets/SVGs/Dashboard/x-close.svg";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
-import CustomSelect from "../../../Components/CustomSelect";
+import CustomSelect from "../../Components/CustomSelect";
 const AddItems = () => {
   const router = useRouter();
   const [inputText, setInputText] = useState<string>("");

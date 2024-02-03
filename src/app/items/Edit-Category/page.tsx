@@ -1,5 +1,5 @@
 import React from 'react'
-import EditCategory from '../../../../Pages/Dashboard/Items/EditCategory'
+import EditCategory from '../../../../Pages/Items/EditCategory'
 
 const page = () => {
   return (

@@ -26,8 +26,12 @@ const CustomSelect: React.FC<{
         <SelectContent className="bg-Base-White">
           <SelectGroup>
             <SelectLabel>{label}</SelectLabel>
-            {values.map((value) => {
-              return <SelectItem value={value}>{value}</SelectItem>;
+            {values.map((value, idx) => {
+              return (
+                <SelectItem key={idx} value={value}>
+                  {value}
+                </SelectItem>
+              );
             })}
           </SelectGroup>
         </SelectContent>

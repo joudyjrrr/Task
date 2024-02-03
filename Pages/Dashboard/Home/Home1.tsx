@@ -30,8 +30,8 @@ const Home1 = () => {
               Do you want to reach more customers?
             </h1>
             <p className="text-gary-600 text-Text-sm font-sx leading-5">
-              Check out Humy's advertising plans and choose the one that suits
-              you best.
+              Check out Humy&apos;s advertising plans and choose the one that
+              suits you best.
             </p>
           </div>
           <div className="flex gap-3">
@@ -490,8 +490,8 @@ const Home1 = () => {
               </p>
 
               <p className="text-gray-700 text-Text-sm font-sm leading-5">
-                "Can I please have extra pickles and a side of spicy mayo with
-                my hamburger order?"
+                &quot;Can I please have extra pickles and a side of spicy mayo
+                with my hamburger order?&quot;
               </p>
             </div>
 

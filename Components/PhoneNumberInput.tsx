@@ -14,7 +14,7 @@ const PhoneNumberInput: React.FC<Type> = ({ label, placeholder }) => {
       <Label>{label}</Label>
       <div className="border rounded-radius_md flex h-[2.75rem] items-center gap-2">
         <CustomSelect
-          TriggerClassName="w-[3.5rem] py-[0.625rem] pl-[0.875rem] shadow-none pr-0 border-0 drop-shadow-none outline-none font-medium text-gray-700"
+          TriggerClassName="w-[3.5rem] py-[0.625rem] pl-[0.875rem] shadow-none pr-0 border-none drop-shadow-none outline-none font-medium text-gray-700"
           label="Us"
           values={["t1", "t2", "t3", "t4"]}
           placeholder="US"

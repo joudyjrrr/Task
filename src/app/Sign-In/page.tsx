@@ -7,12 +7,8 @@ import Group from "../../../Assets/SVGs/SingIn/Group 110.svg";
 import { Label } from "@/components/ui/label";
 import Image from "next/image";
 import { useForm } from "react-hook-form";
-import {
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-} from "@/components/ui/form";
+
+
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
@@ -44,9 +40,10 @@ const page: FC<{
       Img: Star,
     },
   ];
+
   return (
     <div className="flex h-screen w-full items-center ">
-      <div className="flex flex-col justify-center items-center flex-1 px-8 flex-shrink-0 flex-grow-0 bg-gray-50 self-stretch">
+      <div className="flex flex-col justify-center items-center h-full px-8  bg-gray-50 w-1/2">
         <div className="flex absolute top-5 left-5 gap-3">
           <Image alt="Avatr" src={Group} className="w-[1.76569rem] h-8 " />
           <Image alt="Avatr" src={Logo} className="w-[4.44856rem] h-6  mt-2" />
@@ -79,7 +76,7 @@ const page: FC<{
           © Humy 2024
         </p>
       </div>
-      <div className="flex flex-col justify-center w-full h-screen">
+      <div className="flex flex-col justify-center w-1/2 h-screen">
         <div className="bg-white flex justify-center">
           <div className="flex   flex-col px-8 items-center self-stretch gap-8 text-start">
             <div className=" flex flex-col gap-3">

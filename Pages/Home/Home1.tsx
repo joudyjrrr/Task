@@ -12,7 +12,6 @@ import Items from "../../Assets/SVGs/Dashboard/items.png";
 import Star1 from "../../Assets/SVGs/Dashboard/goldStar.svg";
 import Star2 from "../../Assets/SVGs/Dashboard/halfGoldStar.svg";
 import Star3 from "../../Assets/SVGs/Dashboard/Star background(1).svg";
-import Chexk from "../../Assets/SVGs/SingIn/check-circle.svg";
 import { Button } from "@/components/ui/button";
 const Home1 = () => {
   return (
@@ -29,8 +28,8 @@ const Home1 = () => {
               Do you want to reach more customers?
             </h1>
             <p className="text-gary-600 text-Text-sm font-sx leading-5">
-              Check out Humy's advertising plans and choose the one that suits
-              you best.
+              Check out Humy&apos;s advertising plans and choose the one that
+              suits you best.
             </p>
           </div>
           <div className="flex gap-3">
@@ -467,8 +466,8 @@ const Home1 = () => {
               </p>
 
               <p className="text-gray-700 text-Text-sm font-sm leading-5">
-                "Can I please have extra pickles and a side of spicy mayo with
-                my hamburger order?"
+                &quot;Can I please have extra pickles and a side of spicy mayo
+                with my hamburger order?&quot;
               </p>
             </div>
 

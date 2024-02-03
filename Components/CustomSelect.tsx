@@ -10,10 +10,10 @@ import {
 } from "@/components/ui/select";
 
 const CustomSelect: React.FC<{
-  placeholder : string,
+  placeholder: string;
   label: string;
   values: string[];
-  TriggerClassName : string,
+  TriggerClassName: string;
 }> = ({ values, label, TriggerClassName, placeholder }) => {
   return (
     <>
@@ -24,8 +24,12 @@ const CustomSelect: React.FC<{
         <SelectContent className="bg-Base-White">
           <SelectGroup>
             <SelectLabel>{label}</SelectLabel>
-            {values.map((value) => {
-              return <SelectItem value={value}>{value}</SelectItem>;
+            {values.map((value, idx) => {
+              return (
+                <SelectItem key={idx} value={value}>
+                  {value}
+                </SelectItem>
+              );
             })}
           </SelectGroup>
         </SelectContent>

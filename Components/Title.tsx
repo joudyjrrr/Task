@@ -14,7 +14,7 @@ const Title: FC<{
 }> = ({ links, Title, SubTitle, children }) => {
   return (
     <>
-      <div className="flex flex-col gap-6 px-16 w-full">
+      <div className="flex flex-col gap-6  w-full">
         <div className="flex flex-col gap-5 border-b border-b-gray-200 pb-4 w-full">
           <Path links={links} />
           <div className="gap-4 flex justify-between items-start w-full">

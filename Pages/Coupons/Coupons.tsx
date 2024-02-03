@@ -1,5 +1,4 @@
-
-"use client"
+"use client";
 import Image from "next/image";
 import React from "react";
 import home from "../../Assets/SVGs/Dashboard/home-line.svg";
@@ -9,28 +8,24 @@ import { Switch } from "@/components/ui/switch";
 import Cale from "../../Assets/SVGs/Dashboard/Icon(4).svg";
 import Add from "../../Assets/SVGs/Dashboard/Icon(5).svg";
 import { Button } from "@/components/ui/button";
-import PathComponent from "../../Components/PathComponent";
+import PathComponent from "../../Components/Path";
 import SideBar from "../../Layout/SideBar";
 import { useRouter } from "next/navigation";
+import Title from "../../Components/Title";
 const Coupons = () => {
   const router = useRouter();
   return (
     <div className="grid gap-0 grid-cols-[auto,1fr,1fr]">
       <SideBar />
-      <div className="px-[2.5rem] py-12  m-0 col-span-2">
+      <div className="px-[2.5rem]  py-12  m-0 col-span-2">
         <div className="flex flex-col gap-8 items-start w-full">
           <div className="flex w-full">
-            <div className="flex flex-grow flex-col  gap-5 items-start border-b border-gray-300 pb-5 w-full">
-              <PathComponent links={[{ Link: "/Coupons", label: "Coupons" }]} />
-
-              <div>
-                <h1 className="text-gray-900 text-[1.875rem] font-md leading-[2.375rem]">
-                  Coupons
-                </h1>
-                <p className="px-2 text-gray-500 text-Text-md font-xs leading-6">
-                  All coupons created by you
-                </p>
-              </div>
+            <div className="flex flex-grow flex-col  gap-5 items-start  pb-5 w-full">
+              <Title
+                Title="Coupons"
+                SubTitle="All coupons created by you"
+                links={[{ Link: "/Coupons", label: "Coupons" }]}
+              />
             </div>
             <Button
               className="border border-gray-300  text-gray-700 "

@@ -1,8 +1,10 @@
+
+"use client"
 import React from "react";
 import Image from "next/image";
 import Step from "../../Assets/SVGs/Progress steps/_Step icon base.svg";
 import Step2 from "../../Assets/SVGs/Progress steps/Content.svg";
-import PathComponent from "../../Components/PathComponent";
+import PathComponent from "../../Components/Path";
 import SideBar from "../../Layout/SideBar";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
@@ -10,29 +12,25 @@ import { Textarea } from "@/components/ui/textarea";
 import CustomSelect from "../../Components/CustomSelect";
 import Multitext from "../../Components/Multitext";
 import { Button } from "@/components/ui/button";
+import Title from "../../Components/Title";
+import { useRouter } from "next/navigation";
 const AddCoupons = () => {
+    const router = useRouter()
   return (
     <div className="grid gap-0 grid-cols-[auto,1fr,1fr]">
       <SideBar />
       <div className="px-[2.5rem] py-12  m-0 col-span-2">
         <div className="flex flex-col gap-8 items-start w-full">
           <div className="flex w-full">
-            <div className="flex flex-grow flex-col  gap-5 items-start border-b border-gray-300 pb-5 w-full">
-              <PathComponent
+            <div className="flex flex-grow flex-col  gap-5 items-start  pb-5">
+              <Title
+                Title="  Add Coupon"
+                SubTitle="Add a new coupon for your kitchen"
                 links={[
                   { Link: "/Coupons", label: "Coupons" },
                   { Link: "/AddCoupons", label: "Add Coupon" },
                 ]}
               />
-
-              <div>
-                <h1 className="text-gray-900 text-[1.875rem] font-md leading-[2.375rem]">
-                  Add Coupon
-                </h1>
-                <p className="px-2 text-gray-500 text-Text-md font-xs leading-6">
-                  All coupons created by you
-                </p>
-              </div>
             </div>
           </div>
           <div className="flex gap-8 w-full">
@@ -89,7 +87,7 @@ const AddCoupons = () => {
               </div>
               <div className="flex flex-col gap-3">
                 <Button
-                //   onClick={() => router.push("Add-Item2")}
+                    onClick={() => router.push("Add-Coupon2")}
                   className="bg-Brand-600 text-white"
                 >
                   Next

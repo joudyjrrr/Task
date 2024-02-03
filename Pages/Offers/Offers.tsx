@@ -1,22 +1,18 @@
 import React from "react";
-import PathComponent from "../../Components/PathComponent";
+import Path from "../../Components/Path";
+import Title from "../../Components/Title";
+import { Button } from "@/components/ui/button";
 
 const Offers = () => {
   return (
-    <div className="pt-12 pl-2">
-      <div className=" flex flex-col gap-10">
+    <div className="pt-12 pl-2 w-full">
+      <div className=" flex flex-col gap-10 w-full px-4">
         {/* first */}
-        <div className="flex flex-col gap-6 border-b border-b-gray-200">
-          <div className="flex flex-col px-16">
-            <PathComponent links={[{ Link: "/Offers", label: "Offers" }]} />
-            <div className="flex flex-col gap-1">
-              <p className="text-Gray-950 leading-[38px] font-semibold text-Display-sm">
-                Offers
-              </p>
-              <p className="font-[460] ">All offers created by you.</p>
-            </div>
-          </div>
-        </div>
+        <Title
+          Title="Offers"
+          SubTitle="All offers created by you."
+          links={[{ Link: "Offers", label: "Offers" }]}
+        />
         {/* second */}
         <div></div>
       </div>

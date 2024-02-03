@@ -4,7 +4,7 @@ import SideBar from "../../../Layout/SideBar";
 
 const page = () => {
   return (
-    <div className="grid gap-0 grid-cols-[auto,1fr,1fr]">
+    <div className="grid grid-cols-[auto,1fr]">
       <SideBar />
       <Offers />
     </div>

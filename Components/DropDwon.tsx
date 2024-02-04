@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import Edit from "../Assets/SVGs/Dashboard/Icon.svg";
 import Add from "../Assets/SVGs/Dashboard/package-plus.svg";
-import Stop from "../Assets/SVGs/Dashboard/Icon(1).svg";
-import Del from "../Assets/SVGs/Dashboard/Icon(2).svg";
+import Stop from "../Assets/SVGs/Dashboard/Stop.svg";
+import Del from "../Assets/SVGs/Dashboard/Delete.svg";
 
 import Image from "next/image";
 import { useRouter } from "next/navigation";

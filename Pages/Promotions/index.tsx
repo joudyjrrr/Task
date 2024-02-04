@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import home from "../../Assets/SVGs/Dashboard/home-line.svg";
 import RwoRight from "../../Assets/SVGs/Dashboard/chevron-right.svg";
-import Icon from "../../Assets/SVGs/Dashboard/Icon(3).svg";
+import Icon from "../../Assets/SVGs/Dashboard/ExmCircule.svg";
 import Dot from "../../Assets/SVGs/Dashboard/Dot.svg";
 
 import {

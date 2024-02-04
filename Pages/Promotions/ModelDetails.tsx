@@ -13,7 +13,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 const ModelDetails = () => {
   return (
-    <Dialog className="">
+    <Dialog >
       <DialogTrigger>
         {" "}
         <p className="text-Brand-700 text-md leading-5 font-md cursor-pointer">

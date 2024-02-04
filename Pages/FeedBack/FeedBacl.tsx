@@ -1,3 +1,5 @@
+
+"use client"
 import React from "react";
 import SideBar from "../../Layout/SideBar";
 import Title from "../../Components/Title";
@@ -22,8 +24,10 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import Pagenation from "../../Components/Pagenation";
+import { useRouter } from "next/navigation";
 
 const FeedBack = () => {
+  const router = useRouter()
   return (
     <div className="grid gap-0 grid-cols-[auto,1fr,1fr]">
       <SideBar />
@@ -133,8 +137,8 @@ const FeedBack = () => {
               </TableHeader>
               <TableBody>
                 <TableRow>
-                  <TableCell className=" items-center p-4">
-                    <p className="text-gray-900 text-sm leading-5 font-sm">
+                  <TableCell className=" items-center p-4 cursor-pointer" >
+                    <p className="text-gray-900 text-sm leading-5 font-sm" onClick={()=>router.push('FeedBack/Feedbacks-details')}>
                       #863490
                     </p>
                   </TableCell>

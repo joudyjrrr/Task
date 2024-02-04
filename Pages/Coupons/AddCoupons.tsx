@@ -1,9 +1,7 @@
-
-"use client"
+"use client";
 import React from "react";
 import Image from "next/image";
-import Step from "../../Assets/SVGs/Progress steps/_Step icon base.svg";
-import Step2 from "../../Assets/SVGs/Progress steps/Content.svg";
+
 import PathComponent from "../../Components/Path";
 import SideBar from "../../Layout/SideBar";
 import { Label } from "@/components/ui/label";
@@ -14,8 +12,9 @@ import Multitext from "../../Components/Multitext";
 import { Button } from "@/components/ui/button";
 import Title from "../../Components/Title";
 import { useRouter } from "next/navigation";
+import TimeStamp from "../../Components/TimeStamp";
 const AddCoupons = () => {
-    const router = useRouter()
+  const router = useRouter();
   return (
     <div className="grid gap-0 grid-cols-[auto,1fr,1fr]">
       <SideBar />
@@ -87,7 +86,7 @@ const AddCoupons = () => {
               </div>
               <div className="flex flex-col gap-3">
                 <Button
-                    onClick={() => router.push("Add-Coupon2")}
+                  onClick={() => router.push("Add-Coupon2")}
                   className="bg-Brand-600 text-white"
                 >
                   Next
@@ -95,31 +94,13 @@ const AddCoupons = () => {
                 <Button className="border border-gray-300">Cancel</Button>
               </div>
             </div>
-            <div className="flex gap-2 items-start">
-              <div className="flex flex-col justify-center items-center">
-                <Image src={Step} alt="" />
-                <div className="w-0.5 h-[2.125rem] bg-gray-200 "></div>
-                <Image src={Step2} alt="" />
-              </div>
-              <div className="flex flex-col gap-4">
-                <div className="flex flex-col ">
-                  <p className="text-Brand-700 font-md text-Text-sm leading-5 ">
-                    New coupon
-                  </p>
-                  <p className="text-Brand-700 font-xs text-Text-sm leading-5 ">
-                    General informations about offer
-                  </p>
-                </div>
-                <div className="flex flex-col ">
-                  <p className="text-gray-500 font-md text-Text-sm leading-5 ">
-                    Eligibility
-                  </p>
-                  <p className="text-gray-500 font-xs text-Text-sm leading-5 ">
-                    General informations about offer
-                  </p>
-                </div>
-              </div>
-            </div>
+            <TimeStamp
+              title1="New coupon"
+              SubTitle1="General informations about offer"
+              title2="Eligibility"
+              SubTitle2="General informations about offer"
+              step2={false}
+            />
           </div>
         </div>
       </div>

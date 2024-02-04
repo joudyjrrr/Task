@@ -9,6 +9,7 @@ import CustomSelect from "../../Components/CustomSelect";
 import MulriSelect from "../../Components/MultiSelect/MulriSelect";
 import { Button } from "@/components/ui/button";
 import SideBar from "../../Layout/SideBar";
+import Title from "../../Components/Title";
 
 const EditCategory = () => {
   return (
@@ -17,26 +18,14 @@ const EditCategory = () => {
     <div className="px-[2.5rem] py-12  m-0 col-span-2">
       <div className="flex flex-col gap-8 items-start w-full">
         <div className="flex flex-col flex-grow gap-5 items-start border-b border-gray-300 pb-5 w-full">
-          <div className="flex items-center">
-            <Image src={home} alt="home" className="w-5 h-5" />
-            <Image src={RwoRight} alt="home" className="w-4 h-4" />
-            <p className="px-2 text-gray-600 text-Text-sm font-sm leading-5">
-              Items
-            </p>
-            <Image src={RwoRight} alt="home" className="w-4 h-4" />
-            <p className="py-1 flex justify-center rounded-md bg-gray-50 px-2 text-gray-700 text-Text-sm font-md leading-5">
-              Edit Category
-            </p>
-          </div>
-
-          <div>
-            <h1 className="text-gray-900 text-[1.875rem] font-md leading-[2.375rem]">
-              Edit Category
-            </h1>
-            <p className="px-2 text-gray-500 text-Text-md font-xs leading-6">
-              Update the category information
-            </p>
-          </div>
+        <Title
+              Title="Edit Category"
+              SubTitle=" Update the category information"
+              links={[
+                { Link: "/items", label: "Items" },
+                { Link: "/Edit-category", label: "  Edit Category" },
+              ]}
+            />
         </div>
 
         <div className="flex flex-col gap-12 w-full">

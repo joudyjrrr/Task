@@ -12,7 +12,7 @@ import Multitext from "../../Components/Multitext";
 import { Button } from "@/components/ui/button";
 import Title from "../../Components/Title";
 import { useRouter } from "next/navigation";
-import TimeStamp from "../../Components/TimeStamp";
+import TimeStamp from "../../Components/ProgressBar";
 const AddCoupons = () => {
   const router = useRouter();
   return (

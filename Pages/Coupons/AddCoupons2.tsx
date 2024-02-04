@@ -11,7 +11,7 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import DatePicker from "../../Components/DatePicker";
 import { Button } from "@/components/ui/button";
-import TimeStamp from "../../Components/TimeStamp";
+import TimeStamp from "../../Components/ProgressBar";
 
 const AddCoupons2 = () => {
   return (

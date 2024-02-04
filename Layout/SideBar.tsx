@@ -62,7 +62,7 @@ const SideBar = () => {
           })}
         </div>
         {/* second */}
-        <div className="flex flex-col justify-between items-start gap-4 py-5 px-4  rounded-lg bg-gray-50 w-fit">
+        <div className="flex flex-col justify-between items-start gap-4 py-5 px-4  rounded-lg bg-gray-50 ">
           <div className=" flex flex-col gap-1 w-full">
             <div className="flex justify-between text-gray-900 font-semibold leading-5 text-Text-sm">
               <p className="flex justify-center items-center">

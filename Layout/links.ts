@@ -18,7 +18,7 @@ export const Links1 = () => {
     {
       name: "Dashboard",
       icon: dashboard,
-      link:"/",
+      link: "/",
     },
     {
       name: "Orders",
@@ -27,22 +27,22 @@ export const Links1 = () => {
     {
       name: "Items",
       icon: items,
-      link:"/items"
+      link: "/items"
     },
     {
       name: "Offers",
       icon: offers,
-      link:"/Offers"
+      link: "/Offers"
     },
     {
       name: "Promotions",
       icon: promotions,
-      link:"/promotions"
+      link: "/promotions"
     },
     {
       name: "Coupons",
       icon: coupon,
-      link:"/Coupons"
+      link: "/Coupons"
     },
     {
       name: "Stories",
@@ -59,6 +59,7 @@ export const Links1 = () => {
     {
       name: "Feedbacks",
       icon: feedbacks,
+      link: "/FeedBack"
     },
     {
       name: "Wallet",

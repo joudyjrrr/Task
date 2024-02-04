@@ -11,6 +11,7 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import DatePicker from "../../Components/DatePicker";
 import { Button } from "@/components/ui/button";
+import TimeStamp from "../../Components/TimeStamp";
 
 const AddCoupons2 = () => {
   return (
@@ -139,32 +140,13 @@ const AddCoupons2 = () => {
               <Button className="border border-gray-300">Back</Button>
             </div>
           </div>
-
-          <div className="flex gap-2 items-start">
-            <div className="flex flex-col justify-center items-center">
-              <Image src={Step} alt="" />
-              <div className="w-0.5 h-[2.125rem] bg-gray-200 "></div>
-              <Image src={Step2} alt="" />
-            </div>
-            <div className="flex flex-col gap-4">
-              <div className="flex flex-col ">
-                <p className="text-gray-950 font-md text-Text-sm leading-5 ">
-                  New coupon
-                </p>
-                <p className="text-gray-500 font-xs text-Text-sm leading-5 ">
-                  General informations about offer
-                </p>
-              </div>
-              <div className="flex flex-col ">
-                <p className="text-Brand-700 font-md text-Text-sm leading-5 ">
-                  Eligibility
-                </p>
-                <p className="text-Brand-700 font-xs text-Text-sm leading-5 ">
-                  General informations about offer
-                </p>
-              </div>
-            </div>
-          </div>
+          <TimeStamp
+              title1="New coupon"
+              SubTitle1="General informations about offer"
+              title2="Eligibility"
+              SubTitle2="General informations about offer"
+              step2={true}
+            />
         </div>
       </div>
     </div>

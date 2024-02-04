@@ -15,6 +15,7 @@ import { useRouter } from "next/navigation";
 import CustomSelect from "../../Components/CustomSelect";
 import SideBar from "../../Layout/SideBar";
 import Multitext from "../../Components/Multitext";
+import Title from "../../Components/Title";
 const AddItems = () => {
   const router = useRouter();
   const [inputText, setInputText] = useState<string>("");
@@ -40,27 +41,15 @@ const AddItems = () => {
       <SideBar />
       <div className="px-[2.5rem] py-12  m-0 col-span-2">
         <div className="flex flex-col gap-8 items-start w-full">
-          <div className="flex flex-col flex-grow gap-5 items-start border-b border-gray-300 pb-5 w-full">
-            <div className="flex items-center">
-              <Image src={home} alt="home" className="w-5 h-5" />
-              <Image src={RwoRight} alt="home" className="w-4 h-4" />
-              <p className="px-2 text-gray-600 text-Text-sm font-sm leading-5">
-                Items
-              </p>
-              <Image src={RwoRight} alt="home" className="w-4 h-4" />
-              <p className="py-1 flex justify-center rounded-md bg-gray-50 px-2 text-gray-700 text-Text-sm font-md leading-5">
-                Add Item
-              </p>
-            </div>
-
-            <div>
-              <h1 className="text-gray-900 text-[1.875rem] font-md leading-[2.375rem]">
-                Add Item
-              </h1>
-              <p className="px-2 text-gray-500 text-Text-md font-xs leading-6">
-                Add a new item to your kitchen
-              </p>
-            </div>
+          <div className="flex flex-col flex-grow gap-5 items-start w-full">
+            <Title
+              Title=" Add Item"
+              SubTitle="Add a new item to your kitchen"
+              links={[
+                { Link: "/item", label: "Items" },
+                { Link: "/Add-Item", label: "Add Items" },
+              ]}
+            />
           </div>
           <div className="w-full flex flex-col gap-12">
             <div className="flex flex-col gap-6 w-full">

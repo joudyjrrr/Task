@@ -1,10 +1,12 @@
-import React from "react";
+import React, { FC } from "react";
 import upload from "../Assets/SVGs/upload-cloud-02.svg";
 import Image from "next/image";
-const DragDrop = () => {
+const DragDrop: FC<{ className?: string }> = ({ className }) => {
   return (
     <>
-      <div className="gap-4 flex flex-col justify-center items-center border border-Gray-200 rounded-xl p-6 w-full">
+      <div
+        className={`gap-4 flex flex-col justify-center items-center border border-Gray-200 rounded-xl p-6 w-full${className}`}
+      >
         <div className="shadow-xs bg-Base-White border border-Gray-200 rounded-md flex justify-center items-center p-2.5 w-10 h-10">
           <Image
             src={upload}

@@ -3,7 +3,7 @@ import Step1 from "../Assets/SVGs/Progress steps/_Step icon base.svg";
 import GrayStep from "../Assets/SVGs/Progress steps/Content.svg";
 import Check from "../Assets/SVGs/Progress steps/Check.svg";
 import Image from "next/image";
-const TimeStamp: FC<{
+const ProgressBar: FC<{
   title1: string;
   SubTitle1: string;
   title2: string;
@@ -55,4 +55,4 @@ const TimeStamp: FC<{
   );
 };
 
-export default TimeStamp;
+export default ProgressBar;

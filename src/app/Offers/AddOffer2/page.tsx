@@ -1,14 +1,11 @@
 import React from "react";
-
+import AddOffer2 from "../../../../Pages/Offers/AddOffer2/AddOffer2";
 import SideBar from "../../../../Layout/SideBar";
-import AddOffer from "../../../../Pages/Offers/AddOffer/AddOffer";
-
-
 const page = () => {
   return (
     <div className="flex">
       <SideBar />
-      <AddOffer />
+      <AddOffer2 />
     </div>
   );
 };

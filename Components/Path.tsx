@@ -32,7 +32,11 @@ const Path: React.FC<{ links: Type[] }> = ({ links }) => {
               href={link.Link}
               className="h-5 flex justify-center items-center w-fit"
             >
-              <Button className="shadow-none border-none rounded-md py-1 px-2 bg-gray-50 text-gray-700 flex items-center justify-center font-semibold leading-5 text-Text-sm">
+              <Button
+                className={`shadow-none border-none rounded-md py-1 px-2 ${
+                  idx + 1 === links.length ? "bg-gray-50" : ""
+                } text-gray-700 flex items-center justify-center font-semibold leading-5 text-Text-sm`}
+              >
                 {link.label}
               </Button>
             </Link>

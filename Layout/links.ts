@@ -64,6 +64,7 @@ export const Links1 = () => {
     {
       name: "Wallet",
       icon: wallet,
+      link: "/Wallet"
     },
   ];
 

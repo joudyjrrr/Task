@@ -1,14 +1,10 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import home from "../../Assets/SVGs/Dashboard/home-line.svg";
-import RwoRight from "../../Assets/SVGs/Dashboard/chevron-right.svg";
-import { Checkbox } from "@/components/ui/checkbox";
 import { Switch } from "@/components/ui/switch";
 import Cale from "../../Assets/SVGs/Dashboard/Calender.svg";
 import Add from "../../Assets/SVGs/Dashboard/Add.svg";
 import { Button } from "@/components/ui/button";
-import PathComponent from "../../Components/Path";
 import SideBar from "../../Layout/SideBar";
 import { useRouter } from "next/navigation";
 import Title from "../../Components/Title";

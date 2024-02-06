@@ -3,7 +3,10 @@ import SideBar from "../../Layout/SideBar";
 import Title from "../../Components/Title";
 import goldStar from "../../Assets/SVGs/Dashboard/goldStar.svg";
 import garyStar from "../../Assets/SVGs/Dashboard/Star background(1).svg";
+import File from "../../Assets/SVGs/Dashboard/File type icon(1).svg";
+
 import Image from "next/image";
+import { Checkbox } from "@/components/ui/checkbox";
 
 const CouriersDetails = () => {
   return (
@@ -21,7 +24,7 @@ const CouriersDetails = () => {
               ]}
             />
 
-            <div className="flex flex-col">
+            <div className="flex flex-col w-full">
               <div className="flex gap-8 py-8 border-b border-gray-200">
                 <p className="text-gray-700 font-md text-Text-sm leading-5 ">
                   Courier’s Name
@@ -86,11 +89,18 @@ const CouriersDetails = () => {
                 </p>
               </div>
 
-              <div className="flex gap-8 py-8 border-b border-gray-200">
+              <div className="flex gap-8 py-8 border-b border-gray-200 w-full flex-grow">
                 <p className="text-gray-700 font-md text-Text-sm leading-5 ">
                   Driver’s License
                 </p>
-                <div className="flex gap-3 p-4 border border-gray-200  "></div>
+                <div className="flex gap-3 p-4 border border-gray-200 rounded-md flex-grow">
+                   <Image src={File} alt=""/>
+                   <div className="flex flex-col flex-grow">
+                     <p className="text-gray-700 text-sm font-md">arda-driver-license.pdf</p>
+                     <p className="text-gray-600 text-sm font-xs">2 MB</p>
+                   </div>
+                   <Checkbox className="rounded-md"/>
+                </div>
               </div>
             </div>
           </div>

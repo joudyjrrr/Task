@@ -49,7 +49,7 @@ const RespondModal = () => {
             Respond to Feedback
           </p>
           <p className="text-gray-400 font-[460] text-[1.5rem] leading-6">
-            Reply to Arda M.'s comment
+            Reply to Arda Ms comment
           </p>
         </DialogHeader>
         <div className="flex flex-col gap-4">
@@ -59,7 +59,7 @@ const RespondModal = () => {
               {[...Array(5)].map((_, index) => {
                 const CurentRating = index + 1;
                 return (
-                  <div className="">
+                  <div className="" key={index}>
                     <input
                       type="radio"
                       value={CurentRating}

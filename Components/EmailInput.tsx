@@ -7,12 +7,13 @@ import email from "../Assets/SVGs/mail.svg";
 interface Type extends InputHTMLAttributes<HTMLInputElement> {
   label: string;
   placeholder: string;
+  className?:string
 }
-const EmailInput: React.FC<Type> = ({ label, placeholder }) => {
+const EmailInput: React.FC<Type> = ({ label, placeholder , className }) => {
   return (
-    <>
+    <div className="w-full flex flex-col gap-[0.38rem]">
       <Label>{label}</Label>
-      <div className="border w-[25rem] h-[2.75rem] rounded-radius_md flex items-center gap-2 px-[0.875rem] py-[0.625rem]">
+      <div className={`border w-[25rem] h-[2.75rem] rounded-radius_md flex items-center gap-2 px-[0.875rem] py-[0.625rem] ${className}`}>
         <Image
           src={email}
           alt={"Email"}
@@ -24,7 +25,7 @@ const EmailInput: React.FC<Type> = ({ label, placeholder }) => {
           placeholder={placeholder}
         />
       </div>
-    </>
+    </div>
   );
 };
 

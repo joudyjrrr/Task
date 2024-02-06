@@ -1,5 +1,5 @@
 import React from "react";
-import VerifyPHN from "../../../../Pages/Sign-Up/Verify-PHN/Verify-PHN";
+import VerifyPHN from "../../../../Pages/SIgn-Up/Verify-PHN/Verify-PHN";
 const page = () => {
   return (
     <>

@@ -4,13 +4,13 @@ import { Label } from "@/components/ui/label";
 import CustomSelect from "./CustomSelect";
 
 interface Type extends InputHTMLAttributes<HTMLInputElement> {
-  label: string;
+  label?: string;
   placeholder: string;
 }
 
 const PhoneNumberInput: React.FC<Type> = ({ label, placeholder }) => {
   return (
-    <>
+    <div className="w-full flex flex-col gap-[0.38rem]">
       <Label>{label}</Label>
       <div className="border rounded-radius_md flex h-[2.75rem] items-center gap-2">
         <CustomSelect
@@ -24,7 +24,7 @@ const PhoneNumberInput: React.FC<Type> = ({ label, placeholder }) => {
           placeholder={placeholder}
         />
       </div>
-    </>
+    </div>
   );
 };
 

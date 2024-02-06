@@ -1,5 +1,5 @@
 import React from "react";
-import home from "../Assets/SVGs/Dashboard/home-line.svg";
+import home from "../Assets/SVGs/Dashboard/home.svg";
 import arrow from "../Assets/SVGs/arrow-right.svg";
 import Image from "next/image";
 import Link from "next/link";
@@ -27,7 +27,7 @@ const Path: React.FC<{ links: Type[] }> = ({ links }) => {
       />
       {links.map((link, idx) => {
         return (
-          <div className="flex h-7 gap-2 items-center">
+          <div className="flex h-7 gap-2 items-center" key={idx}>
             <Link
               href={link.Link}
               className="h-5 flex justify-center items-center w-fit"

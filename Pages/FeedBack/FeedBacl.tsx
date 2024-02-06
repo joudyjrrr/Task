@@ -1,5 +1,4 @@
-
-"use client"
+"use client";
 import React from "react";
 import SideBar from "../../Layout/SideBar";
 import Title from "../../Components/Title";
@@ -27,7 +26,8 @@ import Pagenation from "../../Components/Pagenation";
 import { useRouter } from "next/navigation";
 
 const FeedBack = () => {
-  const router = useRouter()
+  const test = ["", "", "", ""];
+  const router = useRouter();
   return (
     <div className="grid gap-0 grid-cols-[auto,1fr,1fr]">
       <SideBar />
@@ -97,16 +97,16 @@ const FeedBack = () => {
                 <Label>Status</Label>
                 <CustomSelect
                   TriggerClassName="w-full flex-grow"
-                  children={
-                    <div className="flex gap-2 items-center w-full">
-                      <p className="w-2 h-2 bg-Success-500 rounded-full"></p>
-                      <p className="text-gray-900 font-md text-Text-sm leading-5">
-                        Positive
-                      </p>
-                    </div>
-                  }
                   values={["one", "two"]}
-                />
+                >
+                  {" "}
+                  <div className="flex gap-2 items-center w-full">
+                    <p className="w-2 h-2 bg-Success-500 rounded-full"></p>
+                    <p className="text-gray-900 font-md text-Text-sm leading-5">
+                      Positive
+                    </p>
+                  </div>
+                </CustomSelect>
               </div>
             </div>
 
@@ -136,199 +136,40 @@ const FeedBack = () => {
                 </TableRow>
               </TableHeader>
               <TableBody>
-                <TableRow>
-                  <TableCell className=" items-center p-4 cursor-pointer" >
-                    <p className="text-gray-900 text-sm leading-5 font-sm" onClick={()=>router.push('FeedBack/Feedbacks-details')}>
-                      #863490
-                    </p>
-                  </TableCell>
-                  <TableCell className="flex gap-0 items-center p-4">
-                    <Image src={goldStar} alt="" className="w-6 h-6" />
-                    <Image src={goldStar} alt="" className="w-6 h-6" />
-                    <Image src={goldStar} alt="" className="w-6 h-6" />
-                    <Image src={goldStar} alt="" className="w-6 h-6" />
-                    <Image src={grayStar} alt="" className="w-6 h-6" />
-                  </TableCell>
-                  <TableCell className="flex flex-col gap-2 basis-[70%] p-4">
-                    <p className="text-gray-900 text-sm leading-5 font-sm">
-                      BBQ Bliss Burger, Sweet Potato Fries M
-                    </p>
-                    <p className="text-gray-600 text-Text-sm leading-5 font-xs">
-                      Cheese Lover's Delight is a cheese paradise and de...
-                    </p>
-                  </TableCell>
-                  <TableCell className=" items-center p-4">
-                    <p className="text-gray-600 text-Text-sm leading-5 font-xs">
-                      18/09/2016
-                    </p>
-                  </TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell className=" items-center p-4">
-                    <p className="text-gray-900 text-sm leading-5 font-sm">
-                      #863490
-                    </p>
-                  </TableCell>
-                  <TableCell className="flex gap-0 items-center p-4">
-                    <Image src={goldStar} alt="" className="w-6 h-6" />
-                    <Image src={goldStar} alt="" className="w-6 h-6" />
-                    <Image src={goldStar} alt="" className="w-6 h-6" />
-                    <Image src={grayStar} alt="" className="w-6 h-6" />
-                    <Image src={grayStar} alt="" className="w-6 h-6" />
-                  </TableCell>
-                  <TableCell className="flex flex-col gap-2 basis-[70%] p-4">
-                    <p className="text-gray-900 text-sm leading-5 font-sm">
-                      Kerala Chicken Roast
-                    </p>
-                    <p className="text-gray-600 text-Text-sm leading-5 font-xs">
-                      The classic burger is a flavor explosion! The patty is..
-                    </p>
-                  </TableCell>
-                  <TableCell className=" items-center p-4">
-                    <p className="text-gray-600 text-Text-sm leading-5 font-xs">
-                      18/09/2016
-                    </p>
-                  </TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell className=" items-center p-4">
-                    <p className="text-gray-900 text-sm leading-5 font-sm">
-                      #863490
-                    </p>
-                  </TableCell>
-                  <TableCell className="flex gap-0 items-center p-4">
-                    <Image src={goldStar} alt="" className="w-6 h-6" />
-                    <Image src={goldStar} alt="" className="w-6 h-6" />
-                    <Image src={goldStar} alt="" className="w-6 h-6" />
-                    <Image src={goldStar} alt="" className="w-6 h-6" />
-                    <Image src={grayStar} alt="" className="w-6 h-6" />
-                  </TableCell>
-                  <TableCell className="flex flex-col gap-2 basis-[70%] p-4">
-                    <p className="text-gray-900 text-sm leading-5 font-sm">
-                      Pretzel Chicken Noodle Soup - Regular{" "}
-                    </p>
-                    <p className="text-gray-600 text-Text-sm leading-5 font-xs">
-                      The classic burger is a flavor explosion! The patty is..{" "}
-                    </p>
-                  </TableCell>
-                  <TableCell className=" items-center p-4">
-                    <p className="text-gray-600 text-Text-sm leading-5 font-xs">
-                      18/09/2016
-                    </p>
-                  </TableCell>
-                </TableRow>
-
-                <TableRow>
-                  <TableCell className=" items-center p-4">
-                    <p className="text-gray-900 text-sm leading-5 font-sm">
-                      #863490
-                    </p>
-                  </TableCell>
-                  <TableCell className="flex gap-0 items-center p-4">
-                    <Image src={goldStar} alt="" className="w-6 h-6" />
-                    <Image src={goldStar} alt="" className="w-6 h-6" />
-                    <Image src={grayStar} alt="" className="w-6 h-6" />
-                    <Image src={grayStar} alt="" className="w-6 h-6" />
-                    <Image src={grayStar} alt="" className="w-6 h-6" />
-                  </TableCell>
-                  <TableCell className="flex flex-col gap-2 basis-[70%] p-4">
-                    <p className="text-gray-900 text-sm leading-5 font-sm">
-                      Spicy BBQ Jackfruit Tacos - M
-                    </p>
-                    <p className="text-gray-600 text-Text-sm leading-5 font-xs">
-                      Cheese Lover's Delight is a cheese paradise and de...{" "}
-                    </p>
-                  </TableCell>
-                  <TableCell className=" items-center p-4">
-                    <p className="text-gray-600 text-Text-sm leading-5 font-xs">
-                      18/09/2016
-                    </p>
-                  </TableCell>
-                </TableRow>
-
-                <TableRow>
-                  <TableCell className=" items-center p-4">
-                    <p className="text-gray-900 text-sm leading-5 font-sm">
-                      #863490
-                    </p>
-                  </TableCell>
-                  <TableCell className="flex gap-0 items-center p-4">
-                    <Image src={goldStar} alt="" className="w-6 h-6" />
-                    <Image src={goldStar} alt="" className="w-6 h-6" />
-                    <Image src={grayStar} alt="" className="w-6 h-6" />
-                    <Image src={grayStar} alt="" className="w-6 h-6" />
-                    <Image src={grayStar} alt="" className="w-6 h-6" />
-                  </TableCell>
-                  <TableCell className="flex flex-col gap-2 basis-[70%] p-4">
-                    <p className="text-gray-900 text-sm leading-5 font-sm">
-                      Double Chicken & Cheese Fiesta - Pizza - L{" "}
-                    </p>
-                    <p className="text-gray-600 text-Text-sm leading-5 font-xs">
-                      Cheese Lover's Delight is a cheese paradise and de...
-                    </p>
-                  </TableCell>
-                  <TableCell className=" items-center p-4">
-                    <p className="text-gray-600 text-Text-sm leading-5 font-xs">
-                      18/09/2016
-                    </p>
-                  </TableCell>
-                </TableRow>
-
-                <TableRow>
-                  <TableCell className=" items-center p-4">
-                    <p className="text-gray-900 text-sm leading-5 font-sm">
-                      #863490
-                    </p>
-                  </TableCell>
-                  <TableCell className="flex gap-0 items-center p-4">
-                    <Image src={goldStar} alt="" className="w-6 h-6" />
-                    <Image src={goldStar} alt="" className="w-6 h-6" />
-                    <Image src={goldStar} alt="" className="w-6 h-6" />
-                    <Image src={goldStar} alt="" className="w-6 h-6" />
-                    <Image src={halfGoldStar} alt="" className="w-6 h-6" />
-                  </TableCell>
-                  <TableCell className="flex flex-col gap-2 basis-[70%] p-4">
-                    <p className="text-gray-900 text-sm leading-5 font-sm">
-                      NY Chicken Roll - L
-                    </p>
-                    <p className="text-gray-600 text-Text-sm leading-5 font-xs">
-                      The classic burger is a flavor explosion! The patty is..
-                    </p>
-                  </TableCell>
-                  <TableCell className=" items-center p-4">
-                    <p className="text-gray-600 text-Text-sm leading-5 font-xs">
-                      18/09/2016
-                    </p>
-                  </TableCell>
-                </TableRow>
-
-                <TableRow>
-                  <TableCell className=" items-center p-4">
-                    <p className="text-gray-900 text-sm leading-5 font-sm">
-                      #863490
-                    </p>
-                  </TableCell>
-                  <TableCell className="flex gap-0 items-center p-4">
-                    <Image src={goldStar} alt="" className="w-6 h-6" />
-                    <Image src={goldStar} alt="" className="w-6 h-6" />
-                    <Image src={goldStar} alt="" className="w-6 h-6" />
-                    <Image src={goldStar} alt="" className="w-6 h-6" />
-                    <Image src={grayStar} alt="" className="w-6 h-6" />
-                  </TableCell>
-                  <TableCell className="flex flex-col gap-2 basis-[70%] p-4">
-                    <p className="text-gray-900 text-sm leading-5 font-sm">
-                      Pasta Alla Gricia{" "}
-                    </p>
-                    <p className="text-gray-600 text-Text-sm leading-5 font-xs">
-                      Cheese Lover's Delight is a cheese paradise and de...{" "}
-                    </p>
-                  </TableCell>
-                  <TableCell className=" items-center p-4">
-                    <p className="text-gray-600 text-Text-sm leading-5 font-xs">
-                      18/09/2016
-                    </p>
-                  </TableCell>
-                </TableRow>
+                {test.map((d, index) => (
+                  <TableRow key={index}>
+                    <TableCell className=" items-center p-4 cursor-pointer">
+                      <p
+                        className="text-gray-900 text-sm leading-5 font-sm"
+                        onClick={() =>
+                          router.push("FeedBack/Feedbacks-details")
+                        }
+                      >
+                        #863490
+                      </p>
+                    </TableCell>
+                    <TableCell className="flex gap-0 items-center p-4">
+                      <Image src={goldStar} alt="" className="w-6 h-6" />
+                      <Image src={goldStar} alt="" className="w-6 h-6" />
+                      <Image src={goldStar} alt="" className="w-6 h-6" />
+                      <Image src={goldStar} alt="" className="w-6 h-6" />
+                      <Image src={grayStar} alt="" className="w-6 h-6" />
+                    </TableCell>
+                    <TableCell className="flex flex-col gap-2 basis-[70%] p-4">
+                      <p className="text-gray-900 text-sm leading-5 font-sm">
+                        BBQ Bliss Burger Sweet Potato Fries M
+                      </p>
+                      <p className="text-gray-600 text-Text-sm leading-5 font-xs">
+                        Cheese Lovers Delight is a cheese paradise and de...
+                      </p>
+                    </TableCell>
+                    <TableCell className=" items-center p-4">
+                      <p className="text-gray-600 text-Text-sm leading-5 font-xs">
+                        18/09/2016
+                      </p>
+                    </TableCell>
+                  </TableRow>
+                ))}
               </TableBody>
               <Pagenation />
             </Table>

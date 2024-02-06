@@ -1,15 +1,13 @@
 "use client";
-import Image from "next/image";
 import React from "react";
-import home from "../../Assets/SVGs/Dashboard/home-line.svg";
-import RwoRight from "../../Assets/SVGs/Dashboard/chevron-right.svg";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import CustomSelect from "../../Components/CustomSelect";
-import MulriSelect from "../../Components/MultiSelect/MulriSelect";
+import MulriSelect from "../../Components/MultiSelect/MultiSelect";
 import { Button } from "@/components/ui/button";
 import SideBar from "../../Layout/SideBar";
 import Title from "../../Components/Title";
+import MultiSelectCategory from "./MultiSelectCategory";
 
 const EditCategory = () => {
   return (
@@ -44,7 +42,7 @@ const EditCategory = () => {
 
             <div className="flex flex-col gap-[0.38rem]">
               <Label>Added Items</Label>
-              <MulriSelect />
+              <MultiSelectCategory />
             </div>
           </div>
           <div className="flex flex-col gap-3">

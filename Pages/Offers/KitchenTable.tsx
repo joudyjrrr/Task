@@ -39,6 +39,7 @@ const KitchenTable = () => {
           {test.map((t, idx) => {
             return (
               <TableRow
+              key={idx}
                 className={`${
                   idx + 1 === test.length ? "rounded-bl-lg rounded-br-lg" : ""
                 } !border border-Gray-200 border-b-0`}

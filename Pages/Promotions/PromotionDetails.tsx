@@ -39,7 +39,7 @@ const PromotionDetails = () => {
             <p className="text-gray-700 font-md text-Text-sm leading-5 ">
               Categories
             </p>
-            <div className="flex gap-2">
+            <div className="flex gap-2 ">
               <div className="py-1 px-[0.625rem]  text-center flex justify-center rounded-md border border-gray-300">
                 <p className="text-gray-700 font-sm text-Text-sm leading-5 ">
                   Hamburgers

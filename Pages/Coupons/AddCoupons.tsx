@@ -1,18 +1,15 @@
 "use client";
 import React from "react";
-import Image from "next/image";
-
-import PathComponent from "../../Components/Path";
 import SideBar from "../../Layout/SideBar";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import CustomSelect from "../../Components/CustomSelect";
-import Multitext from "../../Components/Multitext";
 import { Button } from "@/components/ui/button";
 import Title from "../../Components/Title";
 import { useRouter } from "next/navigation";
 import TimeStamp from "../../Components/ProgressBar";
+import MultiSelect from "../../Components/MultiSelect/MultiSelect";
 const AddCoupons = () => {
   const router = useRouter();
   return (
@@ -57,13 +54,9 @@ const AddCoupons = () => {
 
               <div className="w-full flex flex-col gap-[0.38rem]">
                 <Label>Discount Value</Label>
-                <CustomSelect
-                  placeholder="%0"
-                  values={["One", "Two"]}
-                  children={
-                    <p className=" flex flex-grow justify-end">Percentage</p>
-                  }
-                />
+                <CustomSelect placeholder="%0" values={["One", "Two"]}>
+                  <p className=" flex flex-grow justify-end">Percentage</p>
+                </CustomSelect>
               </div>
               <div className="w-full flex flex-col gap-[0.38rem]">
                 <Label>Applies To</Label>
@@ -82,7 +75,7 @@ const AddCoupons = () => {
               </div>
               <div className="w-full flex flex-col gap-[0.38rem]">
                 <Label>Items</Label>
-                <Multitext />
+                <MultiSelect />
               </div>
               <div className="flex flex-col gap-3">
                 <Button

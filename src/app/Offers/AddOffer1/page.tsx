@@ -1,7 +1,7 @@
 import React from "react";
 
 import SideBar from "../../../../Layout/SideBar";
-import AddOffer from "../../../../Pages/Offers/AddOffer1/AddOffer1";
+import AddOffer from "../../../../Pages/Offers/AddOffer/AddOffer1";
 
 const page = () => {
   return (

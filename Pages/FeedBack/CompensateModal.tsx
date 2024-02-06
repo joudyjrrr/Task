@@ -44,13 +44,9 @@ const CompensateModal = () => {
         <div className="flex flex-col gap-4">
           <div className="w-full flex flex-col gap-[0.38rem]">
             <Label>Discount</Label>
-            <CustomSelect
-              placeholder="%0"
-              values={["One", "Two"]}
-              children={
-                <p className=" flex flex-grow justify-end">Percentage</p>
-              }
-            />
+            <CustomSelect placeholder="%0" values={["One", "Two"]}>
+              <p className=" flex flex-grow justify-end">Percentage</p>
+            </CustomSelect>
           </div>
           <div className="w-full flex flex-col gap-[0.38rem]">
             <Label className="flex">
@@ -60,10 +56,10 @@ const CompensateModal = () => {
           </div>
         </div>
         <div>
-            <div className="flex flex-col gap-3">
-                <Button className="bg-Brand-600 text-white">Send Coupon</Button>
-                <Button className="border border-gray-300">Cancel</Button>
-            </div>
+          <div className="flex flex-col gap-3">
+            <Button className="bg-Brand-600 text-white">Send Coupon</Button>
+            <Button className="border border-gray-300">Cancel</Button>
+          </div>
         </div>
       </DialogContent>
     </Dialog>

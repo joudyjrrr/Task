@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import home from "../../../Assets/SVGs/Dashboard/home-line.svg";
+import home from "../../../Assets/SVGs/Dashboard/home.svg";
 import RwoRight from "../../../Assets/SVGs/Dashboard/chevron-right.svg";
 import ArrowUp from "../../../Assets/SVGs/Dashboard/arrow-up.svg";
 import ChartLine from "./Chart";

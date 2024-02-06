@@ -97,7 +97,7 @@ const Transactions = () => {
         </div>
 
         <Table className="w-full">
-          <TableHead className="w-full flex px-0">
+          <TableHeader className="w-full flex px-0">
             <TableRow className="w-full flex bg-gray-50 border-b border-gray-200">
               <TableHead className="w-[7.5rem] flex h-10 py-3  items-center gap-3 !px-6 self-stretc ">
                 <p className=" text-gray-600 text-Text-xs font-sm leading-5">
@@ -116,10 +116,10 @@ const Transactions = () => {
               </TableHead>
               <TableHead className="flex h-10 py-3 px-6 items-center gap-3 self-stretch "></TableHead>
             </TableRow>
-          </TableHead>
+          </TableHeader>
           <TableBody>
             {test.map((t, index) => (
-              <TableRow className="flex  bg-white h-20 border-b border-gray-200 ">
+              <TableRow key={index} className="flex  bg-white h-20 border-b border-gray-200 ">
                 <TableCell className="flex  items-center  h-20 gap-3 py-4 px-6  self-stretch ">
                   <p className="text-gray-600 text-sm leading-5 font-xs ">
                     18/09/2016
@@ -130,7 +130,7 @@ const Transactions = () => {
                     BBQ Bliss Burger, Sweet Potato Fries M
                   </p>
                   <p className="text-gray-600 text-Text-sm leading-5 font-xs">
-                    Cheese Lover's Delight is a cheese paradise and de...
+                    Cheese Lovers Delight is a cheese paradise and de
                   </p>
                 </TableCell>
                 <TableCell className="flex justify-center items-center  h-20 gap-3 py-4 px-6  self-stretch ">

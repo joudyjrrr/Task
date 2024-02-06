@@ -8,7 +8,6 @@ import { Label } from "@/components/ui/label";
 import Image from "next/image";
 import { useForm } from "react-hook-form";
 
-
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
@@ -18,9 +17,7 @@ type Ilogin = {
   email: string;
   password: string;
 };
-const page: FC<{
-  SetAuth: (arg: boolean) => void;
-}> = ({ SetAuth }) => {
+const SignIn = () => {
   const form = useForm<Ilogin>();
   const router = useRouter();
   const Stars = [
@@ -114,8 +111,7 @@ const page: FC<{
 
               <Button
                 onClick={() => {
-                  SetAuth(true);
-                  router.push("/");
+                  router.push("/home");
                 }}
                 className="w-full text-white flex py-[0.625rem] px-4 justify-center items-center gap-[.375rem] rounded-radius_md bg-Brand-600 border border-Brand-600 shadow-sm"
               >
@@ -140,4 +136,4 @@ const page: FC<{
   );
 };
 
-export default page;
+export default SignIn;

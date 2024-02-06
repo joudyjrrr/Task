@@ -1,40 +1,47 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import home from "../../Assets/SVGs/Dashboard/home-line.svg";
-import RwoRight from "../../Assets/SVGs/Dashboard/chevron-right.svg";
 import Pl from "../../Assets/SVGs/Dashboard/placeholder.svg";
 import Pl2 from "../../Assets/SVGs/Dashboard/placeholder(1).svg";
 import Help from "../../Assets/SVGs/Dashboard/help-circle.svg";
-import Close from "../../Assets/SVGs/Dashboard/x-close.svg";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import CustomSelect from "../../Components/CustomSelect";
 import SideBar from "../../Layout/SideBar";
-import Multitext from "../../Components/Multitext";
 import Title from "../../Components/Title";
+import MultiSelect from "../../Components/MultiSelect/MultiSelect";
+import { StylesConfig } from "react-select";
 const AddItems = () => {
   const router = useRouter();
-  const [inputText, setInputText] = useState<string>("");
-  const [input2Text, setInputText2] = useState<string>("");
-  const [styled2Text, setStyledText2] = useState<string[]>([]);
-  const handleKeyPress2: any = (
-    event: React.KeyboardEvent<HTMLTextAreaElement>
-  ) => {
-    if (event.key === "Enter") {
-      setStyledText2((prevText) => [...prevText, input2Text]);
-      setInputText2("");
-    }
-  };
-  const handleRemoveItem2 = (index: number) => {
-    setStyledText2((prevText) => {
-      const updatedText = [...prevText];
-      updatedText.splice(index, 1);
-      return updatedText;
-    });
+  const Styles: StylesConfig = {
+    valueContainer: (style) => ({
+      ...style,
+      display: "flex",
+      alignItems: "start",
+      padding: "0.75rem",
+      height: "100%",
+      gap: "0.5rem",
+    }),
+    control: (style) => ({
+      ...style,
+      height: "50px",
+      ":focus": {
+        outline: "none",
+        border: "none",
+      },
+    }),
+    menuList: (style) => ({
+      ...style,
+      padding: "1rem",
+    }),
+    option: (style) => ({
+      ...style,
+      ":hover": {
+        backgroundColor: "#F9FAFB",
+      },
+    }),
   };
   return (
     <div className="grid gap-0 grid-cols-[auto,1fr,1fr]">
@@ -137,8 +144,9 @@ const AddItems = () => {
                   values={["One", "Two"]}
                   placeholder="1500"
                   TriggerClassName="w-full flex"
-                  children={<p className=" flex flex-grow justify-end">Cal</p>}
-                />
+                >
+                  <p className=" flex flex-grow justify-end">Cal</p>
+                </CustomSelect>
               </div>
               <div className="w-full flex flex-col gap-[0.38rem]">
                 <Label>Fat</Label>
@@ -146,42 +154,21 @@ const AddItems = () => {
                   values={["One", "Two"]}
                   placeholder="5%"
                   TriggerClassName="w-full flex"
-                  children={
-                    <div className=" flex flex-grow justify-end items-center">
-                      <Image src={Help} alt="" className="w-4 h-4 " />
-                      <p className="px-[0.875rem] py-[0.625rem]">Cal</p>
-                    </div>
-                  }
-                />
-              </div>
-              <div>
-                <Label>Ingredients</Label>
-                <Multitext />
-              </div>
-              <div>
-                <Label>Allergic Substances</Label>
-                <div className="w-full flex p-3 gap-2 rounded-md border border-gray-300  shadow-sm">
-                  <div className="flex gap-[0.38rem]">
-                    {styled2Text &&
-                      styled2Text.map((d, index) => (
-                        <div className="flex p-0.5 gap-[0.19rem] pl-[0.5625rem] justify-center items-center rounded-md border border-gray-300">
-                          <p>{d}</p>
-                          <Image
-                            onClick={() => handleRemoveItem2(index)}
-                            src={Close}
-                            alt=""
-                            className="w-3 h-3"
-                          />
-                        </div>
-                      ))}
+                >
+               
+                  <div className=" flex flex-grow justify-end items-center">
+                    <Image src={Help} alt="" className="w-4 h-4 " />
+                    <p className="px-[0.875rem] py-[0.625rem]">Cal</p>
                   </div>
-                  <Input
-                    className="!border-none shadow-none !outline-none !focus:outline-none !p-0"
-                    value={input2Text}
-                    onChange={(event: any) => setInputText2(event.target.value)}
-                    onKeyPress={handleKeyPress2}
-                  />
-                </div>
+                </CustomSelect>
+              </div>
+              <div className="w-full flex flex-col gap-[0.38rem]">
+                <Label>Ingredients</Label>
+                <MultiSelect />
+              </div>
+              <div className="w-full flex flex-col gap-[0.38rem]">
+                <Label>Allergic Substances</Label>
+                <MultiSelect style={Styles} />
               </div>
               <div className="flex flex-col gap-3">
                 <Button

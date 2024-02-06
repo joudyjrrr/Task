@@ -10,7 +10,7 @@ import { Input } from "@/components/ui/input";
 import CustomSelect from "../../Components/CustomSelect";
 import AddRE from "../../Assets/SVGs/Dashboard/add-rectangle.svg";
 import { Button } from "@/components/ui/button";
-import MulriSelect from "../../Components/MultiSelect/MulriSelect";
+import MulriSelect from "../../Components/MultiSelect/MultiSelect";
 import { useRouter } from "next/navigation";
 import SideBar from "../../Layout/SideBar";
 import Title from "../../Components/Title";

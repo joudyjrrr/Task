@@ -1,12 +1,12 @@
-import React from 'react'
-import AddWallet from '../../../../Pages/Sign-Up/AddWallet/AddWallet'
+import React from "react";
+import AddWallet from "../../../../Pages/SIgn-Up/AddWallet/AddWallet";
 
 const page = () => {
   return (
     <>
-    <AddWallet/>
+      <AddWallet />
     </>
-  )
-}
+  );
+};
 
-export default page
+export default page;

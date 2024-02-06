@@ -48,7 +48,9 @@ const DatePicker = () => {
               {format(Date, "y-MM-dd")}
             </span>
           ) : (
-            <span className="flex justify-start text-gray-600 font-xs text-Text-sm leading-5">2023-12-24</span>
+            <span className="flex justify-start text-gray-600 font-xs text-Text-sm leading-5">
+              2023-12-24
+            </span>
           )}
         </Button>
       </PopoverTrigger>
@@ -56,7 +58,7 @@ const DatePicker = () => {
         <Calendar
           mode="single"
           selected={Date}
-          onSelect={(value: Date) => SetDate(value)}
+          onSelect={(value: Date | undefined) => SetDate(value)!}
           initialFocus
         />
       </PopoverContent>

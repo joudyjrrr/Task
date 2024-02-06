@@ -5,7 +5,7 @@ import SearchInput from "../../Components/SearchInput";
 import CustomTable from "../../Components/CustomTable";
 import KitchenTable from "./KitchenTable";
 import HumyTable from "./HumyTable";
-import Add from "../../Assets/SVGs/Dashboard/Icon(5).svg";
+import Add from "../../Assets/SVGs/Dashboard/Add.svg";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
@@ -21,7 +21,7 @@ const Offers = () => {
         >
           <Link href={"Offers/AddOffer1"} className="">
             <Button className="border border-gray-300  text-gray-700 shadow-none ">
-              <Image src={Add} alt="" className="w-4 h-4" /> Add coupons
+              <Image src={Add} alt="" className="w-4 h-4" /> Add Offers
             </Button>
           </Link>
         </Title>
@@ -30,7 +30,7 @@ const Offers = () => {
           <div className="flex justify-between gap-8">
             <div className="flex flex-col gap-1">
               <p className="text-Gray-950 leading-5 font-semibold text-Text-sm">
-                Your kitchen's offers
+                Your kitchens offers
               </p>
               <p className="font-normal leadin g-5 text-Text-sm text-Gray-600">
                 Promotions added by you for general purchases and/or for your
@@ -46,10 +46,10 @@ const Offers = () => {
           <div className="flex justify-between gap-8">
             <div className="flex flex-col gap-1">
               <p className="text-Gray-950 leading-5 font-semibold text-Text-sm">
-                Humy's offers
+                Humys offers
               </p>
               <p className="font-normal leadin g-5 text-Text-sm text-Gray-600">
-                Humy's offers for your kitchen
+                Humys offers for your kitchen
               </p>
             </div>
             <div>

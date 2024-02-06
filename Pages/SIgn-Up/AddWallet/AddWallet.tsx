@@ -1,7 +1,6 @@
 import React from "react";
 import SignUpHeader from "../SignUpHeader";
 import SVGBackGround from "../../../Components/SVGBackGround";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import wallet from "../../../Assets/SVGs/WalletDetails.svg";
 import { Label } from "@/components/ui/label";

@@ -35,9 +35,9 @@ const CustomTable: React.FC<{
       <Table>
         <TableHeader className={`${ ''}`}>
           <TableRow className={`${TableRowClassName}`}>
-            {headers.map((header) => {
+            {headers.map((header , index) => {
               return (
-                <TableCell className={`h-fit ${header.className} `}>
+                <TableCell key={index} className={`h-fit ${header.className} `}>
                   {header.text}
                 </TableCell>
               );
@@ -46,9 +46,9 @@ const CustomTable: React.FC<{
         </TableHeader>
         <TableBody className={`${TableBody}`}>
           <TableRow className={`${TableBodyClassName}`}>
-            {rows.map((row) => {
+            {rows.map((row , index) => {
               return (
-                <TableCell className={`${row.className}`}>{row.Cell}</TableCell>
+                <TableCell  key={index} className={`${row.className}`}>{row.Cell}</TableCell>
               );
             })}
           </TableRow>

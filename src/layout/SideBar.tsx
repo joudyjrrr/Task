@@ -4,6 +4,11 @@ import SearchInput from "../components/custom/MultiSelect/SearchInput";
 import NavList from "./nav/NavList";
 import { firstNavConfig, secondNavConfig } from "./nav/config";
 import { Button } from "../components/ui/button";
+import HummyLogo from "../../public/svg/global/humy-logo.svg"
+import Avatr from "../../public/svg/global/Group 110.svg"
+
+
+
 
 const SideBar = () => {
   return (
@@ -12,8 +17,8 @@ const SideBar = () => {
       <div className="flex flex-col justify-between gap-6 pt-8 w-full">
         <span className="flex px-6">
           <Link to={"/"} className="flex justify-between gap-3">
-            <img src={""} alt="avatar" />
-            <img src={""} alt="logo" />
+            <img src={Avatr} alt="avatar" />
+            <img src={HummyLogo} alt="logo" />
           </Link>
           <div></div>
         </span>

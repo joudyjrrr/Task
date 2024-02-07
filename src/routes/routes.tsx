@@ -1,5 +1,6 @@
 import { Navigate, useRoutes } from "react-router-dom";
 import { AuthPages } from "./elements";
+import { AUTH_ROUTES_PATH } from "./paths";
 
 // import EmployeeDashboardLayout from "../layouts/employee/EmployeeDashboardLayout";
 // import AuthAdminGuard from "../auth/AuthAdminGuard";
@@ -18,10 +19,10 @@ export default function Router() {
           index: true,
         },
         {
-          path: "auth",
+          path: AUTH_ROUTES_PATH.root,
           children: [
-            { path: "sign-in", element: AuthPages.SignIn },
-            { path: "sign-up", element: AuthPages.SignUp },
+            { path: AUTH_ROUTES_PATH.signIn, element: AuthPages.SignIn },
+            { path: AUTH_ROUTES_PATH.signUp, element: AuthPages.SignUp },
           ],
         },
         // { path: "auth/login", element: <LoginPage /> },

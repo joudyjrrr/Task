@@ -11,6 +11,13 @@ export const AUTH_PATH = {
   resetPassword: path(ROOTS_AUTH, "/reset-password"),
   newPassword: path(ROOTS_AUTH, "/new-password"),
 };
+export const AUTH_ROUTES_PATH = {
+  root: ROOTS_AUTH,
+  signIn: path(ROOTS_AUTH, "/sign-in"),
+  signUp: path(ROOTS_AUTH, "/sign-up"),
+};
+
+
 const ROOTS_DASHBOARD = "/dashboard";
 export const PATH_PAGE = {
   payment: "/payment",

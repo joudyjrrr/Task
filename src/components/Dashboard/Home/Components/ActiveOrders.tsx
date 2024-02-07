@@ -324,9 +324,9 @@ const ActiveOrders = () => {
             <img
               src={ItemPng}
               alt="item"
-              className="w-[38.75rem] h-48   rounded-t-[0.625rem]"
+              className="w-full  h-48   rounded-t-[0.625rem]"
             />
-            <div className="flex flex-col px-8 justify-center items-start border w-full border-gray-100 rounded-b-[0.625rem]">
+            <div className="flex flex-col px-8 justify-center items-start bg-white border w-full border-gray-100 rounded-b-[0.625rem]">
               <div className="flex py-8 gap-4 border-b border-gray-100 w-full ">
                 <p className="text-gray-700 text-Text-sm font-md leading-5 flex-grow">
                   Order

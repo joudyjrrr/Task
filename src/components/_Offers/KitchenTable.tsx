@@ -1,17 +1,14 @@
-import React from "react";
+import { Button } from "@/components/ui/button";
+import { Switch } from "@/components/ui/switch";
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
 import pen from "../../Assets/SVGs/Pen.svg";
-import { Switch } from "@/components/ui/switch";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
 
 const KitchenTable = () => {
   const test = ["", "", "", "", ""];
@@ -64,7 +61,11 @@ const KitchenTable = () => {
                   className={`p-4 flex items-center justify-center text-Text-sm font-normal leading-5 text-Gray-600 border-b border-b-Gray-200 `}
                 >
                   <Button className="border-none shadow-none">
-                    <Image src={pen} alt="pen" className="h-5 w-5" />
+                    <img
+                      src={"/svg/global/edit.svg"}
+                      alt="pen"
+                      className="h-5 w-5"
+                    />
                   </Button>
                 </TableCell>
               </TableRow>

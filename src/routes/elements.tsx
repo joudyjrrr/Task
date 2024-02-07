@@ -23,4 +23,5 @@ export const DASHBOARD_PAGES = {
 
 export const OFFERS_PAGES = {
   ALL_OFFERS: LazyLoadRoutes("offers/allOffers"),
+  ADD_OFFER: LazyLoadRoutes("offers/AddOffer"),
 };

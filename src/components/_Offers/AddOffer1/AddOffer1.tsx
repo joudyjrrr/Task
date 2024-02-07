@@ -29,7 +29,6 @@ const AddOffer = () => {
           links={links}
         />
         <div className="flex w-full justify-between items-start gap-8">
-          {/* first */}
           <div className="flex flex-col w-full justify-between gap-8">
             <div className="flex flex-col w-full gap-8">
               <div className=" flex flex-col gap-6 w-full">

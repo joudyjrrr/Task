@@ -22,7 +22,7 @@ export const firstNavConfig = [
   {
     title: "dashboard",
     icon: ICONS.dashboard,
-    pathname: "/",
+    pathname: "/dashboard/overview",
   },
   {
     title: "orders",

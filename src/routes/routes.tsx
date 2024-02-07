@@ -46,6 +46,10 @@ export default function Router() {
               index: true,
               element: OFFERS_PAGES.ALL_OFFERS,
             },
+            {
+              path: OFFERS_ROUTES_PATH.ADD_OFFER,
+              element: OFFERS_PAGES.ADD_OFFER,
+            },
           ],
         },
       ],

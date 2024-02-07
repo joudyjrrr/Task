@@ -1,15 +1,12 @@
-import React from "react";
+import { Button } from "@/components/ui/button";
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import info from "../../Assets/SVGs/info-circle.svg";
 
 const HumyTable = () => {
@@ -57,7 +54,11 @@ const HumyTable = () => {
                   className={`p-4 flex items-center justify-center w-[4.5rem] text-Text-sm font-normal leading-5 text-Gray-600 border-b border-b-Gray-200 `}
                 >
                   <Button className="border-none shadow-none p-0">
-                    <Image src={info} alt="info" className="h-5 w-5" />
+                    <img
+                      src="/svg/global/info-circle.svg"
+                      alt=""
+                      className="h-5 w-5"
+                    />
                   </Button>
                 </TableCell>
               </TableRow>

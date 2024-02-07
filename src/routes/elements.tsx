@@ -13,17 +13,17 @@ export function LazyLoadRoutes(componentPath: string) {
 
 
 export const AUTH_PAGES = {
-  signIn: LazyLoadRoutes('auth/SignIn'),
-  signUp: LazyLoadRoutes('auth/SingUp'),
+  SIGN_IN: LazyLoadRoutes('auth/SignIn'),
+  SIGN_UP: LazyLoadRoutes('auth/SingUp'),
   //  lazy(() => import("../pages/auth/sign-in/SignIn")),
 };
 
 export const DASHBOARD_PAGES = {
-  overview :  LazyLoadRoutes('dashboard/Overview')
+  OVERVIEW :  LazyLoadRoutes('dashboard/Overview')
 }
 
-allOffers
+
 export const OFFERS_PAGES = {
-  : LazyLoadRoutes('offers/allOffers')
+  ALL_OFFERS: LazyLoadRoutes('offers/allOffers')
 
 }

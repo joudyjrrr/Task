@@ -6,12 +6,17 @@ import { Label } from "@/components/ui/label";
 import React from "react";
 
 interface VerifyPhoneNumberProps {
-    setStep: (step: string) => void;
+  setStep: (nextStep: string) => void;
+  nextStep: string;
 }
 
 const VerifyPhoneNumber: React.FunctionComponent<VerifyPhoneNumberProps> = ({
   setStep,
+  nextStep,
 }) => {
+  const changeStepHandler = () => {
+    setStep(nextStep);
+  };
   return (
     <>
       <div className="flex flex-col justify-between items-center gap-6">
@@ -37,7 +42,7 @@ const VerifyPhoneNumber: React.FunctionComponent<VerifyPhoneNumberProps> = ({
         {/* second */}
         <div className="flex flex-col items-start gap-3 w-full">
           <Button
-            onClick={setStep}
+            onClick={changeStepHandler}
             className="text-Base-White bg-Brand-600 w-full flex justify-center items-center shadow-xs py-[10px] border rounded-lg"
           >
             Verify Phone Number

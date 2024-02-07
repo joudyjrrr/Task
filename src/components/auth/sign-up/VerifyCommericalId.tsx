@@ -5,12 +5,17 @@ import React, { MouseEventHandler } from "react";
 import { Link } from "react-router-dom";
 
 interface VerifyCommericalIdProps {
-  setStep: MouseEventHandler<HTMLButtonElement>;
+  setStep: (nextStep: string) => void;
+  nextStep: string;
 }
 
 const VerifyCommericalId: React.FunctionComponent<VerifyCommericalIdProps> = ({
   setStep,
+  nextStep,
 }) => {
+  const changeStepHandler = () => {
+    setStep(nextStep);
+  };
   return (
     <div>
       <div className="flex flex-col justify-between items-center gap-6">
@@ -76,7 +81,7 @@ const VerifyCommericalId: React.FunctionComponent<VerifyCommericalIdProps> = ({
       </div>
       <Button
         type="button"
-        onClick={setStep}
+        onClick={changeStepHandler}
         className="flex bg-Brand-600 text-Base-White w-full"
       >
         Send

@@ -18,13 +18,20 @@ import { MouseEventHandler } from "react";
 import { useNavigate } from "react-router-dom";
 
 interface CreateAccountProps {
-    setStep: MouseEventHandler<HTMLButtonElement>;
+  nextStep: string;
+  setStep: (nextStep: string) => void;
 }
 
 const CreateAccount: React.FunctionComponent<CreateAccountProps> = ({
   setStep,
+  nextStep,
 }) => {
   const navigate = useNavigate();
+
+  const changeStepHandler = () => {
+    setStep(nextStep);
+  };
+
   return (
     <>
       <div className="flex flex-col justify-center items-center">
@@ -93,7 +100,7 @@ const CreateAccount: React.FunctionComponent<CreateAccountProps> = ({
         </div>
 
         <Button
-          onClick={setStep}
+          onClick={changeStepHandler}
           type="button"
           className="w-full text-white flex py-[0.625rem] px-4 justify-center items-center gap-[.375rem] rounded-radius_md bg-Brand-600 border border-Brand-600 shadow-sm"
         >

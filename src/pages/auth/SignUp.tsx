@@ -7,7 +7,6 @@ import SignUpSteps from "@/components/auth/sign-up/SignUpSteps";
 import VerifyCommericalId from "@/components/auth/sign-up/VerifyCommericalId";
 import VerifyId from "@/components/auth/sign-up/VerifyId";
 import VerifyPhoneNumber from "@/components/auth/sign-up/VerifyPhoneNumber";
-import { MouseEvent } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 
 const defaultStep = "create-account";
@@ -16,10 +15,7 @@ const SignUp = () => {
   const [searchParams] = useSearchParams();
   const step = searchParams.get("step") || defaultStep;
 
-  const setStepHandler = (
-    step: string,
-    e: MouseEvent<HTMLButtonElement, MouseEvent>
-  ) => {
+  const setStepHandler = (step: string) => {
     navigate("?step=" + step);
     window?.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -31,31 +27,34 @@ const SignUp = () => {
       <AuthContainer className="relative">
         <StepContainer currentStep={step} expectedStep={defaultStep}>
           <CreateAccount
-            setStep={setStepHandler.bind(null, "verify-phone-number")}
+            setStep={setStepHandler}
             nextStep="verify-phone-number"
           />
         </StepContainer>
 
         <StepContainer currentStep={step} expectedStep={"verify-phone-number"}>
-          <VerifyPhoneNumber setStep={setStepHandler.bind(null, "verify-id")} />
+          <VerifyPhoneNumber
+            nextStep="verfiy-id"
+            setStep={setStepHandler.bind(null, "verify-id")}
+          />
         </StepContainer>
 
         <StepContainer currentStep={step} expectedStep={"verify-id"}>
           <VerifyId
+            nextStep="verify-commerical-id"
             setStep={setStepHandler.bind(null, "verify-commerical-id")}
           />
         </StepContainer>
 
         <StepContainer currentStep={step} expectedStep={"verify-commerical-id"}>
           <VerifyCommericalId
-            setStep={setStepHandler.bind(null,"kitchen-details")}
+            nextStep="kitchen-detials"
+            setStep={setStepHandler}
           />
         </StepContainer>
 
         <StepContainer currentStep={step} expectedStep={"kitchen-details"}>
-          <CreateKitchen
-            setStep={setStepHandler.bind(null, "wallet-details")}
-          />
+          <CreateKitchen nextStep="wallet-details" setStep={setStepHandler} />
         </StepContainer>
 
         <StepContainer currentStep={step} expectedStep={"wallet-details"}>

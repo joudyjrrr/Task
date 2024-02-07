@@ -1,22 +1,19 @@
-import PropTypes from "prop-types";
 // form
 import {
-  FieldValue,
   FieldValues,
   FormProvider as Form,
   UseFormReturn,
-  useForm,
 } from "react-hook-form";
 
 // ----------------------------------------------------------------------
 
 interface FormProviderProps {
   children: React.ReactNode;
-  methods: UseFormReturn<FieldValues, any, undefined>;
-  onSubmit: () => void;
+  methods: UseFormReturn<FieldValues, any, FieldValues>;
+  onSubmit: React.FormEventHandler<HTMLFormElement>;
 }
 
-const FormProvider: React.FunctionComponent<FormProviderProps> = ({
+export const FormProvider: React.FunctionComponent<FormProviderProps> = ({
   children,
   onSubmit,
   methods,

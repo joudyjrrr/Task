@@ -25,21 +25,10 @@ export default function Router() {
             { path: AUTH_ROUTES_PATH.signUp, element: AUTH_PAGES.signUp },
           ],
         },
-        // { path: "auth/login", element: <LoginPage /> },
-        // { path: "auth/restaurant-form", element: <RestaurantFormPage /> },
-        // { path: "auth/admin-form", element: <RegisterPage /> },
-        // { path: "auth/payment-form", element: <PaymentFormPage /> },
-        // { path: "auth/reset-password", element: <ResetPasswordPage /> },
-        // { path: "auth/confirmation", element: <ConfirmationCodePage /> },
-        // {
-        //   path: "auth/password-verification",
-        //   element: <VerificationCodePage />,
-        // },
-        // { path: "auth/newPassword-login", element: <NewPasswordLoginPage /> },
       ],
     },
 
-    { path: "*", element: AUTH_PAGES.SignIn },
+    // { path: "*", element: AUTH_PAGES.SignIn },
     // { path: "/404", element: <></> },
   ]);
 }

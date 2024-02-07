@@ -7,7 +7,7 @@ import SignUpSteps from "@/components/auth/sign-up/SignUpSteps";
 import VerifyCommericalId from "@/components/auth/sign-up/VerifyCommericalId";
 import VerifyId from "@/components/auth/sign-up/VerifyId";
 import VerifyPhoneNumber from "@/components/auth/sign-up/VerifyPhoneNumber";
-import { MouseEvent } from "react";
+import { MouseEvent, MouseEventHandler } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 
 const defaultStep = "create-account";
@@ -48,7 +48,7 @@ const SignUp = () => {
 
         <StepContainer currentStep={step} expectedStep={"verify-commerical-id"}>
           <VerifyCommericalId
-            setStep={setStepHandler.bind(null,"kitchen-details")}
+            setStep={setStepHandler.bind(null, "kitchen-details")}
           />
         </StepContainer>
 

@@ -8,6 +8,7 @@ const slice = createSlice({
     dir: "ltr",
     contactInfo: "olivia@untitledui.com",
     iban: "",
+    
   },
   reducers: {
     changeLangHandler: (state, action) => {
@@ -25,8 +26,11 @@ const slice = createSlice({
       state.dir = payload;
     },
   },
-  // extraReducers: {
-  // },
+  extraReducers: {
+    [resetCode.fullfield]{
+
+    }
+  },
 });
 
 export default slice.reducer;

@@ -1,9 +1,7 @@
-import PropTypes from "prop-types";
-import { useFormContext, Controller } from "react-hook-form";
-import { labelSx, txtFieldBorderStyle } from "./style";
 import { ComponentProps, useState } from "react";
-import Typography from "../ui/typography";
+import { Controller, useFormContext } from "react-hook-form";
 import { Input } from "../ui/input";
+import Typography from "../ui/typography";
 
 interface RHFTextFieldProps {
   type: ComponentProps<typeof Input>["type"];
@@ -62,3 +60,5 @@ const renderIcon = (show: boolean) => {
       return undefined;
   }
 };
+
+export default RHFTextField;

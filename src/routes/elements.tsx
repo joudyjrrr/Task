@@ -21,3 +21,9 @@ export const AUTH_PAGES = {
 export const DASHBOARD_PAGES = {
   overview :  LazyLoadRoutes('dashboard/Overview')
 }
+
+allOffers
+export const OFFERS_PAGES = {
+  : LazyLoadRoutes('offers/allOffers')
+
+}

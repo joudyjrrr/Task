@@ -24,6 +24,16 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx",
+    "next-env.d.ts",
+    "../../node_modules/@nrwl/react/types/image.d.ts",
+    ".next/types/**/*.ts",
+    "build/types/**/*.ts"
+, "src/routes/elements.tsx"  ],
+  "exclude": ["node_modules"]
 }

@@ -11,19 +11,16 @@ export function LazyLoadRoutes(componentPath: string) {
   );
 }
 
-
 export const AUTH_PAGES = {
-  signIn: LazyLoadRoutes('auth/SignIn'),
-  signUp: LazyLoadRoutes('auth/SingUp'),
+  signIn: LazyLoadRoutes("auth/SignIn"),
+  signUp: LazyLoadRoutes("auth/SingUp"),
   //  lazy(() => import("../pages/auth/sign-in/SignIn")),
 };
 
 export const DASHBOARD_PAGES = {
-  overview :  LazyLoadRoutes('dashboard/Overview')
-}
+  overview: LazyLoadRoutes("dashboard/Overview"),
+};
 
-allOffers
 export const OFFERS_PAGES = {
-  : LazyLoadRoutes('offers/allOffers')
-
-}
+  allOffers: LazyLoadRoutes("offers/allOffers"),
+};

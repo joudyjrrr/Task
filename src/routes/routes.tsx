@@ -40,6 +40,6 @@ export default function Router() {
       // path: OFFEERS_ROUTES_PATH.ROOT
     }
 
-    { path: "*" },
+    // { path: "*" },
   ]);
 }

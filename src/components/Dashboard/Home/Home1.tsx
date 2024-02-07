@@ -20,7 +20,7 @@ const Home1 = () => {
             Title="  Welcome back, Olivia"
             SubTitle="  Your current sales summary and activity."
           />
-          <Button color="" className="bg-white border border-gray-200 text-gray-700 gap-3"> <img src={Massege} className="w-5 h-5"/> View Notifications </Button>
+          <Button color="" className="bg-white border border-gray-200 text-gray-700  font-md text-sm gap-3"> <img src={Massege} className="w-5 h-5"/> View Notifications </Button>
         </div>
         <CardsHome />
         <ActiveOrders />

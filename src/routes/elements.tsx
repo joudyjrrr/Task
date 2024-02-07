@@ -12,8 +12,8 @@ export function LazyLoadRoutes(componentPath: string) {
   );
 }
 
-export const AuthPages = {
-  SignIn: LazyLoadRoutes(AUTH_PATH.signIn),
-  SignUp: LazyLoadRoutes(AUTH_PATH.signUp),
+export const AUTH_PAGES = {
+  signIn: LazyLoadRoutes(AUTH_PATH.signIn),
+  signUp: LazyLoadRoutes(AUTH_PATH.signUp),
   //  lazy(() => import("../pages/auth/sign-in/SignIn")),
 };

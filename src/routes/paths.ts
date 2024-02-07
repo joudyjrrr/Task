@@ -13,10 +13,9 @@ export const AUTH_PATH = {
 };
 export const AUTH_ROUTES_PATH = {
   root: ROOTS_AUTH,
-  signIn: path(ROOTS_AUTH, "/sign-in"),
-  signUp: path(ROOTS_AUTH, "/sign-up"),
+  signIn: "sign-in",
+  signUp: "sign-up",
 };
-
 
 const ROOTS_DASHBOARD = "/dashboard";
 export const PATH_PAGE = {

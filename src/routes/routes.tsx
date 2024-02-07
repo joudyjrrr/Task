@@ -1,5 +1,5 @@
 import { Navigate, useRoutes } from "react-router-dom";
-import { AuthPages } from "./elements";
+import { AUTH_PAGES } from "./elements";
 import { AUTH_ROUTES_PATH } from "./paths";
 
 // import EmployeeDashboardLayout from "../layouts/employee/EmployeeDashboardLayout";
@@ -21,8 +21,8 @@ export default function Router() {
         {
           path: AUTH_ROUTES_PATH.root,
           children: [
-            { path: AUTH_ROUTES_PATH.signIn, element: AuthPages.SignIn },
-            { path: AUTH_ROUTES_PATH.signUp, element: AuthPages.SignUp },
+            { path: AUTH_ROUTES_PATH.signIn, element: AUTH_PAGES.signIn },
+            { path: AUTH_ROUTES_PATH.signUp, element: AUTH_PAGES.signUp },
           ],
         },
         // { path: "auth/login", element: <LoginPage /> },
@@ -39,7 +39,7 @@ export default function Router() {
       ],
     },
 
-    { path: "*", element: AuthPages.SignIn },
+    { path: "*", element: AUTH_PAGES.SignIn },
     // { path: "/404", element: <></> },
   ]);
 }

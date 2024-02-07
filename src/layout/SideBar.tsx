@@ -4,16 +4,12 @@ import SearchInput from "../components/custom/MultiSelect/SearchInput";
 import NavList from "./nav/NavList";
 import { firstNavConfig, secondNavConfig } from "./nav/config";
 import { Button } from "../components/ui/button";
-import HummyLogo from "../../public/svg/global/humy-logo.svg"
-import Avatr from "../../public/svg/global/Group 110.svg"
-
-
-
+import HummyLogo from "../../public/svg/global/humy-logo.svg";
+import Avatr from "../../public/svg/global/Group 110.svg";
 
 const SideBar = () => {
   return (
     <div className="flex flex-col flex-shrink gap-6 border w-[280px] border-r-gray-200">
-      {/* first */}
       <div className="flex flex-col justify-between gap-6 pt-8 w-full">
         <span className="flex px-6">
           <Link to={"/"} className="flex justify-between gap-3">

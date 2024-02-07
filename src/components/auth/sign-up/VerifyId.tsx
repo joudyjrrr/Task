@@ -7,12 +7,18 @@ import React, { MouseEventHandler } from "react";
 import { Link } from "react-router-dom";
 
 interface VerifyIdProps {
-   setStep: MouseEventHandler<HTMLButtonElement>;
+  setStep: (nextStep: string) => void;
+  nextStep: string;
 }
 
 const VerifyId: React.FunctionComponent<VerifyIdProps> = ({
   setStep,
+  nextStep
 }) => {
+
+  const changeStepHandler = () => {
+    setStep(nextStep);
+  };
   return (
     <>
       <div className="flex flex-col justify-between items-center gap-6">
@@ -109,7 +115,7 @@ const VerifyId: React.FunctionComponent<VerifyIdProps> = ({
       </div>
       <Button
         type="button"
-        onClick={setStep}
+        onClick={changeStepHandler}
         className="flex bg-Brand-600 text-Base-White w-full"
       >
         Send

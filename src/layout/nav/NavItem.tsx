@@ -13,12 +13,12 @@ const NavItem: React.FunctionComponent<NavItemProps> = ({
   icon,
 }) => {
   return (
-    <div className="flex gap-2 px-2 py-3 justify-start items-center w-full">
-      {icon}
+    <div className="flex gap-2 justify-start items-center w-full hover:bg-slate-100 rounded-radius_sm">
       <Link
         to={`${pathname}`}
-        className="text-gray-700 text-Text-md leading-6 font-medium"
+        className="text-gray-700 text-Text-md leading-6 font-medium w-full flex items-center gap-3 px-3  py-3 "
       >
+        {icon}
         {title}
       </Link>
     </div>

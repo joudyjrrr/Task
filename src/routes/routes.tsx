@@ -3,12 +3,6 @@ import { AUTH_PAGES, DASHBOARD_PAGES } from "./elements";
 import { AUTH_ROUTES_PATH, DASHBOAR_ROUTES_PATH } from "./paths";
 import Layout from "@/layout/Layout";
 
-// import EmployeeDashboardLayout from "../layouts/employee/EmployeeDashboardLayout";
-// import AuthAdminGuard from "../auth/AuthAdminGuard";
-// import AuthEmployeeGuard from "../auth/AuthEmployeeGuard";
-
-// ----------------------------------------------------------------------
-
 export default function Router() {
   return useRoutes([
     {
@@ -25,18 +19,6 @@ export default function Router() {
             { path: AUTH_ROUTES_PATH.signUp, element: AUTH_PAGES.signUp },
           ],
         },
-
-        // { path: "auth/login", element: <LoginPage /> },
-        // { path: "auth/restaurant-form", element: <RestaurantFormPage /> },
-        // { path: "auth/admin-form", element: <RegisterPage /> },
-        // { path: "auth/payment-form", element: <PaymentFormPage /> },
-        // { path: "auth/reset-password", element: <ResetPasswordPage /> },
-        // { path: "auth/confirmation", element: <ConfirmationCodePage /> },
-        // {
-        //   path: "auth/password-verification",
-        //   element: <VerificationCodePage />,
-        // },
-        // { path: "auth/newPassword-login", element: <NewPasswordLoginPage /> },
       ],
     },
     {
@@ -51,7 +33,5 @@ export default function Router() {
     },
 
     { path: "*" },
-   
-    // { path: "/404", element: <></> },
   ]);
 }

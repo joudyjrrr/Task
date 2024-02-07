@@ -7,8 +7,15 @@ import { Textarea } from "@/components/ui/textarea";
 import React from "react";
 
 const CreateKitchen: React.FunctionComponent<{
-  setStep: (step: string) => void;
-}> = ({ setStep }) => {
+  setStep: (nextStep: string) => void;
+  nextStep: string;
+}> = ({ setStep, nextStep }) => {
+
+
+  const changeStepHandler = () => {
+    setStep(nextStep);
+  };
+
   return (
     <div>
       <div className="flex flex-col justify-between items-center gap-6 ">
@@ -94,7 +101,7 @@ const CreateKitchen: React.FunctionComponent<{
           {/* second */}
           <Button
             type="button"
-            onClick={setStep}
+            onClick={changeStepHandler}
             className="bg-Brand-600 w-full text-Base-White w-full py-[10px] px-4 shadow-xs rounded-lg border border-Brand-600"
           >
             Create Kitchen

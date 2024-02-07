@@ -1,10 +1,10 @@
 import React from "react";
-
+import imgSubbort from "../../../public/Images/img1.jpg";
+import { Button } from "@/components/ui/button";
+import Home1 from "@/components/Dashboard/Home/Home1";
 const Overview = () => {
   return (
-    <div className="bg-gray-50 bg-cover bg-center  w-full px-[2.5rem] py-12  m-0 ">
-
-    </div>
+    <Home1/>
   );
 };
 

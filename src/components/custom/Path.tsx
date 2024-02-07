@@ -1,9 +1,9 @@
 import React from "react";
-import home from "../Assets/SVGs/Dashboard/home.svg";
-import arrow from "../Assets/SVGs/arrow-right.svg";
-import Image from "next/image";
-import Link from "next/link";
+import home from "../../../public/svg/global/home-line.svg";
+import arrow from "../../../public/svg/global/Arrow-right.svg";
+
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 interface Type {
   label: string;
@@ -13,14 +13,14 @@ interface Type {
 const Path: React.FC<{ links: Type[] }> = ({ links }) => {
   return (
     <div className="h-7 flex gap-2 items-center">
-      <Link href={"/"} className="w-5 h-5 flex justify-center items-center">
-        <Image
+      <Link to={"/"} className="w-5 h-5 flex justify-center items-center">
+        <img
           src={home}
           alt="home"
           className="flex just ify-center items-center"
         />
       </Link>
-      <Image
+      <img
         src={arrow}
         alt="arrow"
         className="flex justify-center items-center"
@@ -29,18 +29,18 @@ const Path: React.FC<{ links: Type[] }> = ({ links }) => {
         return (
           <div className="flex h-7 gap-2 items-center" key={idx}>
             <Link
-              href={link.Link}
+              to={link.Link}
               className="h-5 flex justify-center items-center w-fit"
             >
               <Button
                 className={`shadow-none border-none rounded-md py-1 px-2 ${
-                  idx + 1 === links.length ? "bg-gray-50" : ""
+                  links.length === 2 ? "!bg-transparent" : ""
                 } text-gray-700 flex items-center justify-center font-semibold leading-5 text-Text-sm`}
               >
                 {link.label}
               </Button>
             </Link>
-            {idx + 1 !== links.length && <Image src={arrow} alt="arrow" />}
+            {idx + 1 !== links.length && <img src={arrow} alt="arrow" />}
           </div>
         );
       })}

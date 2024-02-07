@@ -1,9 +1,15 @@
 import { Navigate, useRoutes } from "react-router-dom";
-import { AUTH_PAGES, DASHBOARD_PAGES, OFFERS_PAGES } from "./elements";
+import {
+  AUTH_PAGES,
+  DASHBOARD_PAGES,
+  OFFERS_PAGES,
+  PROMOTION_PAGES,
+} from "./elements";
 import {
   AUTH_ROUTES_PATH,
   DASHBOAR_ROUTES_PATH,
   OFFERS_ROUTES_PATH,
+  PROMOTIONS_PATH,
 } from "./paths";
 import Layout from "@/layout/Layout";
 
@@ -49,6 +55,19 @@ export default function Router() {
             {
               path: OFFERS_ROUTES_PATH.ADD_OFFER,
               element: OFFERS_PAGES.ADD_OFFER,
+            },
+          ],
+        },
+        {
+          path: PROMOTIONS_PATH.ALL_PRMOMTIONS,
+          children: [
+            {
+              index: true,
+              element: PROMOTION_PAGES.ALL_PROMOTION,
+            },
+            {
+              path: PROMOTIONS_PATH.PROMOTIONS_DETAILS,
+              element: PROMOTION_PAGES.PROMOTIONS_DETAILS,
             },
           ],
         },

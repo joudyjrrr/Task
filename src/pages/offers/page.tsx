@@ -1,6 +1,7 @@
+import Offers from "@/components/_Offers/Offers";
+import SideBar from "@/layout/SideBar";
 import React from "react";
-import Offers from "../../../Pages/Offers/Offers";
-import SideBar from "../../../Layout/SideBar";
+
 
 
 

@@ -8,12 +8,12 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import React, { FC } from "react";
-import join from "../../Assets/SVGs/Dashboard/Featured icon.svg";
-import Image from "next/image";
+import join from "../../../public/svg/promotion/Featured icon.svg";
+
 import { Button } from "@/components/ui/button";
 const ModelDetails = () => {
   return (
-    <Dialog className="">
+    <Dialog>
       <DialogTrigger>
         {" "}
         <p className="text-Brand-700 text-md leading-5 font-md cursor-pointer">
@@ -22,7 +22,7 @@ const ModelDetails = () => {
       </DialogTrigger>
       <DialogContent className="rounded-lg !max-w-[26rem]">
         <DialogHeader className=" flex flex-col gap-4">
-          <Image src={join} alt="" className="w-12 h-12" />
+          <img src={join} alt="" className="w-12 h-12" />
           <div className="flex flex-col">
             <DialogTitle className="text-gray-950 font-md text-Text-lg leading-6">
               Are you sure you want to join this promotion?

@@ -1,22 +1,13 @@
 import React, { Fragment } from "react";
-import Image from "next/image";
+
 import Select, { MenuProps, StylesConfig, components } from "react-select";
 
 import "./style.css";
 import chroma from "chroma-js";
 import img from "../../Assets/SVGs/SingIn/Avatar.png";
-import { StaticImageData } from "next/image";
+
 const MulriSelect = () => {
-  interface ColourOption {
-    readonly value: string;
-    readonly label: string;
-    readonly color: string;
-    readonly isFixed?: boolean;
-    readonly isDisabled?: boolean;
-    title: string;
-    description: string;
-    image: string | StaticImageData;
-  }
+
   const colourOptions = [
     {
       value: "Spicy Jalapeño Burger",

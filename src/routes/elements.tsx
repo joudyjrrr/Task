@@ -25,3 +25,8 @@ export const OFFERS_PAGES = {
   ALL_OFFERS: LazyLoadRoutes("offers/allOffers"),
   ADD_OFFER: LazyLoadRoutes("offers/AddOffer"),
 };
+
+export const  PROMOTION_PAGES ={
+  ALL_PROMOTION : LazyLoadRoutes("promotions/Promotions"),
+  PROMOTIONS_DETAILS:LazyLoadRoutes("promotions/promotion-details/PromotionDetails")
+}

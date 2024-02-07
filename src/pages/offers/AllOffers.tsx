@@ -1,5 +1,6 @@
-import HumyTable from "@/components/Offers/HumyTable";
-import KitchenTable from "@/components/Offers/KitchenTable";
+
+import HumyTable from "@/components/_Offers/HumyTable";
+import KitchenTable from "@/components/_Offers/KitchenTable";
 import Title from "@/components/custom/Title";
 import { Button } from "@/components/ui/button";
 import { OFFERS_PATH } from "@/routes/paths";

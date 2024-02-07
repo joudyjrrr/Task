@@ -1,14 +1,10 @@
 import React from "react";
-import Path from "../../Components/Path";
-import Title from "../../Components/Title";
-import SearchInput from "../../Components/SearchInput";
-import CustomTable from "../../Components/CustomTable";
 import KitchenTable from "./KitchenTable";
 import HumyTable from "./HumyTable";
 import Add from "../../Assets/SVGs/Dashboard/Icon(5).svg";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import Image from "next/image";
+import Title from "../custom/Title";
+import { Link } from "react-router-dom";
 
 const Offers = () => {
   return (
@@ -19,9 +15,9 @@ const Offers = () => {
           SubTitle="All offers created by you."
           links={[{ Link: "Offers", label: "Offers" }]}
         >
-          <Link href={"Offers/AddOffer1"} className="">
+          <Link to={"Offers/AddOffer1"} className="">
             <Button className="border border-gray-300  text-gray-700 shadow-none ">
-              <Image src={Add} alt="" className="w-4 h-4" /> Add coupons
+              <img src={Add} alt="" className="w-4 h-4" /> Add coupons
             </Button>
           </Link>
         </Title>

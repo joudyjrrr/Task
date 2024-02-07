@@ -1,10 +1,10 @@
 import StepContainer from "@/components/aminated/StepContainer";
 import AddOfferFirstSection from "@/components/offers/AddOfferFirstSection";
-import React from "react";
+import React, { FC } from "react";
 
-const 
+ 
 
-const AddOffer = () => {
+const AddOffer:FC<{step : number ; defaultStep : number , setStepHandler :(arg :number)=>void}> = ({defaultStep , step , se}) => {
   const setStepHandler = () => {};
 
   return (

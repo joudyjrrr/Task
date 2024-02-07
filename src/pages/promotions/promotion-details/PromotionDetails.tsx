@@ -1,5 +1,5 @@
 import React from 'react'
-import PromotionDetails from '../../../../Pages/Promotions/PromotionDetails'
+import PromotionDetails from '../../../components/Promotions/PromotionDetails'
 
 const page = () => {
   return (

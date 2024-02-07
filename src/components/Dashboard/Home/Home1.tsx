@@ -8,7 +8,7 @@ import Massege from "../../../../public/svg/global/message-notification-circle.s
 import { Button } from "@/components/ui/button";
 const Home1 = () => {
   return (
-    <div className="bg-gray-50   w-full  py-12 h-full">
+    <div className="bg-gray-50 px-[2.5rem]  w-full  py-12 h-full">
       <CardSupport />
       <div className="flex flex-col pb-8 gap-8 items-start mr-28 ">
         <div className="flex w-full">

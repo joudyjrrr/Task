@@ -5,6 +5,7 @@ const path = (...paths: string[]) => {
 const ROOTS_AUTH = "auth";
 const ROOTS_DASHBOARD = "dashboard";
 const ROOTS_OFFERS = "offers";
+const ROOTS_PROMOTIONS ='promotions'
 
 export const AUTH_ROUTES_PATH = {
   ROOT: ROOTS_AUTH,
@@ -32,3 +33,7 @@ export const OFFERS_PATH = {
   ALL_OFFERS: ROOTS_OFFERS,
   ADD_OFFER: path(ROOTS_OFFERS, "add-offer"),
 };
+export const PROMOTIONS_PATH = {
+   ALL_PRMOMTIONS : ROOTS_PROMOTIONS,
+   PROMOTIONS_DETAILS : path(ROOTS_PROMOTIONS,"promotios-details")
+}

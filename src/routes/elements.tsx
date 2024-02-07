@@ -1,5 +1,4 @@
 import { lazy, Suspense } from "react";
-import { AUTH_PATH } from "./paths";
 
 export function LazyLoadRoutes(componentPath: string) {
   console.log(componentPath);
@@ -12,8 +11,13 @@ export function LazyLoadRoutes(componentPath: string) {
   );
 }
 
+
 export const AUTH_PAGES = {
   signIn: LazyLoadRoutes('auth/SignIn'),
-  signUp: LazyLoadRoutes(AUTH_PATH.signUp),
+  signUp: LazyLoadRoutes('auth/SingUp'),
   //  lazy(() => import("../pages/auth/sign-in/SignIn")),
 };
+
+export const DASHBOARD_PAGES = {
+  overview :  LazyLoadRoutes('dashboard/Overview')
+}

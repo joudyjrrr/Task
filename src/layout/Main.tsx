@@ -1,7 +1,11 @@
-import React from "react";
+import { Outlet } from "react-router-dom";
 
-const Main = () => {
-  return <main></main>;
+const Main = ({}) => {
+  return (
+    <main className="col-span-2">
+      <Outlet />
+    </main>
+  );
 };
 
 export default Main;

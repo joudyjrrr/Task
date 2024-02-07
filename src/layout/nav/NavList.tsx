@@ -1,6 +1,6 @@
 import React from "react";
 import { firstNavConfig } from "./config";
-import NavItem from "./navItem";
+import NavItem from "./NavItem";
 
 const NavList: React.FunctionComponent<{
   navListData: typeof firstNavConfig;
@@ -8,7 +8,7 @@ const NavList: React.FunctionComponent<{
   return (
     <div>
       {navListData.map((navItem) => (
-        <NavItem key={navItem.icon} {...navItem} />
+        <NavItem key={navItem.pathname} {...navItem} />
       ))}
     </div>
   );

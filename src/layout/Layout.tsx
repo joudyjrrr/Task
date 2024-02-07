@@ -1,12 +1,11 @@
-import React from "react";
-import SideBar from "./SideBar";
 import Main from "./Main";
+import SideBar from "./SideBar";
 
 const Layout = () => {
   return (
-    <div className="">
+    <div className="grid gap-0 grid-cols-[auto,1fr,1fr]">
       <SideBar />
-      <Main/>
+      <Main />
     </div>
   );
 };

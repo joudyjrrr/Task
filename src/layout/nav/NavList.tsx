@@ -8,7 +8,7 @@ const NavList: React.FunctionComponent<{
   return (
     <div>
       {navListData.map((navItem) => (
-        <NavItem key={navItem.pathname} {...navItem} />
+        <NavItem key={navItem.title} {...navItem} />
       ))}
     </div>
   );

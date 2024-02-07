@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 
 const Main = ({}) => {
   return (
-    <main className="col-span-2">
+    <main className="px-10">
       <Outlet />
     </main>
   );

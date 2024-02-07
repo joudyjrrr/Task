@@ -5,7 +5,7 @@ const SearchInput: FC<{ placeholder?: string }> = ({ placeholder }) => {
   return (
     <div className="border rounded-radius_md flex items-center justify-between gap-2 px-[14px] py-[10px] h-11">
       <img
-        src={"/"}
+        src={"/svg/input/search-lg.svg"}
         alt={"search"}
         className="justify-center flex items-center"
       />

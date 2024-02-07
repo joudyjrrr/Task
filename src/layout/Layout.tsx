@@ -3,7 +3,7 @@ import SideBar from "./SideBar";
 
 const Layout = () => {
   return (
-    <div className="">
+    <div className="grid gap-0 grid-cols-[auto,1fr,1fr]">
       <SideBar />
       <Main />
     </div>

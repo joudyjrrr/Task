@@ -1,13 +1,11 @@
-import React from "react";
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
-  TableHead,
   TableHeader,
-  TableRow,
+  TableRow
 } from "@/components/ui/table";
+import React from "react";
 interface Header {
   text: string;
   className?: string;
@@ -26,7 +24,6 @@ const CustomTable: React.FC<{
 }> = ({
   headers,
   rows,
-  TableClassName,
   TableRowClassName,
   TableBodyClassName,
 }) => {

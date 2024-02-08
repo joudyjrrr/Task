@@ -7,16 +7,23 @@ interface StepContainerProps {
   expectedStep: number | string;
   children: React.ReactNode;
   className?: string;
+  distance?: number;
+  exitDistance?: number;
 }
 
-const { inLeft } = varSlide({ distance: 600, exitDistance: -600 });
-
 const StepContainer: React.FunctionComponent<StepContainerProps> = ({
+  distance,
+  exitDistance,
   currentStep,
   expectedStep,
   className,
   children,
 }) => {
+  
+  const { inLeft } = varSlide({
+    distance: distance || 600,
+    exitDistance: exitDistance || -600,
+  });
   return (
     <AnimatePresence>
       <motion.div

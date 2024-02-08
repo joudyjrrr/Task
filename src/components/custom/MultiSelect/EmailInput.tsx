@@ -1,8 +1,6 @@
-import React, { InputHTMLAttributes } from "react";
-import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import email from "../Assets/SVGs/mail.svg";
+import React, { InputHTMLAttributes } from "react";
 
 interface Type extends InputHTMLAttributes<HTMLInputElement> {
   label: string;
@@ -13,8 +11,8 @@ const EmailInput: React.FC<Type> = ({ label, placeholder }) => {
     <>
       <Label>{label}</Label>
       <div className="border w-[25rem] h-[2.75rem] rounded-radius_md flex items-center gap-2 px-[0.875rem] py-[0.625rem]">
-        <Image
-          src={email}
+        <img
+          src={'/svg/global/mail.svg'}
           alt={"Email"}
           className="w-5 h-5 justify-center flex items-center"
         />
@@ -27,5 +25,6 @@ const EmailInput: React.FC<Type> = ({ label, placeholder }) => {
     </>
   );
 };
+
 
 export default EmailInput;

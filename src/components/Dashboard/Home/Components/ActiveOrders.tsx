@@ -1,13 +1,12 @@
-import { Input } from "@/components/ui/input";
-import React from "react";
-import Search from "../../../../../public/svg/input/search-lg.svg";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Badge from "@/components/custom/Badge";
+import { Input } from "@/components/ui/input";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import ItemPng from "../../../../../public/Images/items.png";
-import goldStar from "../../../../../public/svg/global/goldStar.svg";
-import halfGoldStar from "../../../../../public/svg/global/halfGoldStar.svg";
 import Star from "../../../../../public/svg/global/Star background(1).svg";
 import check from "../../../../../public/svg/global/chek-circule.svg";
+import goldStar from "../../../../../public/svg/global/goldStar.svg";
+import halfGoldStar from "../../../../../public/svg/global/halfGoldStar.svg";
+import Search from "../../../../../public/svg/input/search-lg.svg";
 
 import { Button } from "@/components/ui/button";
 

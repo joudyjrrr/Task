@@ -1,11 +1,10 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import Avatr from "../../public/svg/global/Group 110.svg";
+import HummyLogo from "../../public/svg/global/humy-logo.svg";
 import SearchInput from "../components/custom/MultiSelect/SearchInput";
+import { Button } from "../components/ui/button";
 import NavList from "./nav/NavList";
 import { firstNavConfig, secondNavConfig } from "./nav/config";
-import { Button } from "../components/ui/button";
-import HummyLogo from "../../public/svg/global/humy-logo.svg";
-import Avatr from "../../public/svg/global/Group 110.svg";
 
 const SideBar = () => {
   return (

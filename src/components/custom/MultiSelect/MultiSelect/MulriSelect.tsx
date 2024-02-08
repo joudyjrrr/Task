@@ -1,22 +1,18 @@
-import React, { Fragment } from "react";
-import Image from "next/image";
-import Select, { MenuProps, StylesConfig, components } from "react-select";
+import Select, { StylesConfig, components } from "react-select";
 
-import "./style.css";
-import chroma from "chroma-js";
 import img from "../../Assets/SVGs/SingIn/Avatar.png";
-import { StaticImageData } from "next/image";
+import "./style.css";
 const MulriSelect = () => {
-  interface ColourOption {
-    readonly value: string;
-    readonly label: string;
-    readonly color: string;
-    readonly isFixed?: boolean;
-    readonly isDisabled?: boolean;
-    title: string;
-    description: string;
-    image: string | StaticImageData;
-  }
+  // interface ColourOption {
+  //   readonly value: string;
+  //   readonly label: string;
+  //   readonly color: string;
+  //   readonly isFixed?: boolean;
+  //   readonly isDisabled?: boolean;
+  //   title: string;
+  //   description: string;
+  //   image: string;
+  // }
   const colourOptions = [
     {
       value: "Spicy Jalapeño Burger",
@@ -62,7 +58,7 @@ const MulriSelect = () => {
       <>
         <components.Option {...props}>
           <div className="flex gap-2 ">
-            <Image
+            <img
               alt=""
               src={props.data.img}
               className="w-[2.5rem] h-[2.5rem] rounded-full"

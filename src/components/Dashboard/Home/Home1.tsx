@@ -1,14 +1,13 @@
-import React from "react";
-import CardSupport from "./Components/CardSupport";
 import Title from "@/components/custom/Title";
-import CardsHome from "./Components/CardsHome";
-import ActiveOrders from "./Components/ActiveOrders";
 import Massege from "../../../../public/svg/global/message-notification-circle.svg";
+import ActiveOrders from "./Components/ActiveOrders";
+import CardSupport from "./Components/CardSupport";
+import CardsHome from "./Components/CardsHome";
 
 import { Button } from "@/components/ui/button";
 const Home1 = () => {
   return (
-    <div className="bg-gray-50   w-full  py-12 h-full">
+    <div className="   w-full  py-12 h-full">
       <CardSupport />
       <div className="flex flex-col pb-8 gap-8 items-start mr-28 ">
         <div className="flex w-full">

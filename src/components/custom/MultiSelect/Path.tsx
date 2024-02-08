@@ -1,9 +1,6 @@
-import React from "react";
-import home from "../Assets/SVGs/Dashboard/home-line.svg";
-import arrow from "../Assets/SVGs/arrow-right.svg";
-import Image from "next/image";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import React from "react";
+import { Link } from "react-router-dom";
 
 interface Type {
   label: string;
@@ -13,15 +10,15 @@ interface Type {
 const Path: React.FC<{ links: Type[] }> = ({ links }) => {
   return (
     <div className="h-7 flex gap-2 items-center">
-      <Link href={"/"} className="w-5 h-5 flex justify-center items-center">
-        <Image
-          src={home}
+      <Link to={"/"} className="w-5 h-5 flex justify-center items-center">
+        <img
+          src={"/svg/global/home-line.svg"}
           alt="home"
           className="flex just ify-center items-center"
         />
       </Link>
-      <Image
-        src={arrow}
+      <img
+        src={"/svg/global/chevron-right.svg"}
         alt="arrow"
         className="flex justify-center items-center"
       />
@@ -29,7 +26,7 @@ const Path: React.FC<{ links: Type[] }> = ({ links }) => {
         return (
           <div className="flex h-7 gap-2 items-center">
             <Link
-              href={link.Link}
+              to={link.Link}
               className="h-5 flex justify-center items-center w-fit"
             >
               <Button
@@ -40,7 +37,9 @@ const Path: React.FC<{ links: Type[] }> = ({ links }) => {
                 {link.label}
               </Button>
             </Link>
-            {idx + 1 !== links.length && <Image src={arrow} alt="arrow" />}
+            {idx + 1 !== links.length && (
+              <img src={"/svg/global/chevron-right.svg"} alt="arrow" />
+            )}
           </div>
         );
       })}

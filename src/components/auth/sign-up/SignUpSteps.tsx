@@ -19,7 +19,7 @@ const Steps = [
 ];
 
 const SignUpSteps: React.FunctionComponent<{ step: number | string }> = ({
-  step,
+  // step,
 }) => {
   return (
     <div className="w-full h-full ">

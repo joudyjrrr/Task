@@ -1,8 +1,5 @@
-import React, { FC } from "react";
-import Step1 from "../Assets/SVGs/Progress steps/_Step icon base.svg";
-import GrayStep from "../Assets/SVGs/Progress steps/Content.svg";
-import Check from "../Assets/SVGs/Progress steps/Check.svg";
-import Image from "next/image";
+import { FC } from "react";
+
 const TimeStamp: FC<{
   title1: string;
   SubTitle1: string;
@@ -13,10 +10,11 @@ const TimeStamp: FC<{
   return (
     <div className="flex gap-2 items-start">
       <div className="flex flex-col justify-center items-center">
-        <Image src={step2 ? Check : Step1} alt="" />
+        <img src={"" ? "" : ""} alt="" />
         <div className="w-0.5 h-[2.125rem] bg-gray-200 "></div>
-        <Image src={step2 ? Step1 : GrayStep} alt="" />
+        <img src={"" ? "" : ""} alt="" />
       </div>
+      ''
       <div className="flex flex-col gap-4">
         <div className="flex flex-col ">
           <p

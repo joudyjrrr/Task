@@ -1,6 +1,5 @@
-import React from 'react'
-import imgSubbort from "../../../../../public/Images/img1.jpg";
 import { Button } from "@/components/ui/button";
+import imgSubbort from "../../../../../public/Images/img1.jpg";
 const CardSupport = () => {
   return (
     <div className="flex h-[10rem]  gap-8 items-start rounded-[0.75rem] bg-white shadow-sm mr-28 mb-12">

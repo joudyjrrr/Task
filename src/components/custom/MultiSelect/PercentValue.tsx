@@ -1,6 +1,6 @@
-import React, { FC } from "react";
-import CustomSelect from "./CustomSelect";
 import { Input } from "@/components/ui/input";
+import { FC } from "react";
+import CustomSelect from "./CustomSelect";
 
 const PercentValue: FC<{ className?: string }> = ({ className }) => {
   return (

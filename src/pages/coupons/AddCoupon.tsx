@@ -1,10 +1,11 @@
 import StepContainer from "@/components/aminated/StepContainer";
-import AddOfferInfo from "@/components/offers/AddOfferInfo";
-import OfferPreview from "@/components/offers/OfferPreview";
+import AddCouponEligibility from "@/components/coupons/AddCouponEligibility";
+import AddCouponInfo from "@/components/coupons/AddCouponInfo";
 import { useNavigate, useSearchParams } from "react-router-dom";
 
-const defaultStep = "create-account";
-const AddOffer = () => {
+const defaultStep = "add-offer-info";
+
+const AddCoupon = () => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
 
@@ -21,32 +22,24 @@ const AddOffer = () => {
         expectedStep={defaultStep}
         exitDistance={-1400}
       >
-        <AddOfferInfo
+        <AddCouponInfo
           setStep={setStepHandler}
-          nextStep="add-offer-eligibility"
+          nextStep="add-coupon-eligiblity"
         />
       </StepContainer>
 
       <StepContainer
         currentStep={step}
-        expectedStep={"add-offer-eligibility"}
+        expectedStep={"add-coupon-eligiblity"}
         exitDistance={-1400}
       >
-        <AddOfferInfo setStep={setStepHandler} nextStep="preview-offer" />
-      </StepContainer>
-
-      <StepContainer
-        currentStep={step}
-        expectedStep={"preview-offer"}
-        exitDistance={-1400}
-      >
-        <OfferPreview
+        <AddCouponEligibility
           setStep={setStepHandler}
-          prevStep="add-offer-eligibility"
+          prevStep="add-offer-info"
         />
       </StepContainer>
     </div>
   );
 };
 
-export default AddOffer;
+export default AddCoupon;

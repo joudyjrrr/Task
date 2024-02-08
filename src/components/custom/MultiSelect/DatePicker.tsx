@@ -1,33 +1,19 @@
 "use client";
 
-import { zodResolver } from "@hookform/resolvers/zod";
-import { format, setDate } from "date-fns";
 import { CalendarIcon } from "lucide-react";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
 
-import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { useState } from "react";
-import { Input } from "@/components/ui/input";
+import { cn } from "@/lib/utils";
+// import { useState } from "react";
 
 const DatePicker = () => {
-  const [Date, SetDate] = useState<Date>();
+  // const [Date, SetDate] = useState<Date>();
 
   return (
     <Popover>
@@ -43,20 +29,20 @@ const DatePicker = () => {
           )}
         >
           <CalendarIcon className=" h-5 w-5  flex justify-start" />{" "}
-          {Date ? (
+          {/* {Date ? (
             <span className="flex justify-start text-gray-600 font-xs text-Text-sm leading-5">
               {format(Date, "y-MM-dd")}
             </span>
           ) : (
             <span className="flex justify-start text-gray-600 font-xs text-Text-sm leading-5">2023-12-24</span>
-          )}
+          )} */}
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-auto p-0" align="start">
         <Calendar
           mode="single"
-          selected={Date}
-          onSelect={(value: Date) => SetDate(value)}
+          // selected={Date}
+          // onSelect={(value: Date) => SetDate(value)}
           initialFocus
         />
       </PopoverContent>

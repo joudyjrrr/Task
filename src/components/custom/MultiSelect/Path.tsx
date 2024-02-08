@@ -1,8 +1,5 @@
-import React from "react";
-import home from "../../../../public/svg/global/home-line.svg";
-import arrow from "../../../../public/svg/global/arrow-right.svg";
-
 import { Button } from "@/components/ui/button";
+import React from "react";
 import { Link } from "react-router-dom";
 
 interface Type {
@@ -15,13 +12,13 @@ const Path: React.FC<{ links: Type[] }> = ({ links }) => {
     <div className="h-7 flex gap-2 items-center">
       <Link to={"/"} className="w-5 h-5 flex justify-center items-center">
         <img
-          src={home}
+          src={"/svg/global/home-line.svg"}
           alt="home"
           className="flex just ify-center items-center"
         />
       </Link>
       <img
-        src={arrow}
+        src={"/svg/global/chevron-right.svg"}
         alt="arrow"
         className="flex justify-center items-center"
       />
@@ -40,7 +37,9 @@ const Path: React.FC<{ links: Type[] }> = ({ links }) => {
                 {link.label}
               </Button>
             </Link>
-            {idx + 1 !== links.length && <img src={arrow} alt="arrow" />}
+            {idx + 1 !== links.length && (
+              <img src={"/svg/global/chevron-right.svg"} alt="arrow" />
+            )}
           </div>
         );
       })}

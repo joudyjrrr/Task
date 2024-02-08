@@ -1,15 +1,13 @@
 "use client";
-import React from "react";
-import { Chart, scales } from "chart.js";
 import {
-  Chart as ChartJS,
   CategoryScale,
+  Chart as ChartJS,
+  Legend,
+  LineElement,
   LinearScale,
   PointElement,
-  LineElement,
   Title,
   Tooltip,
-  Legend,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
 // import faker from "faker";

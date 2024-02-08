@@ -1,13 +1,9 @@
-import React from "react";
-import ArrwoRigth from "../Assets/SVGs/ArrwoRight.svg";
-import ArrwoLeft from "../Assets/SVGs/ArrwoLeft.svg";
-import Image from "next/image";
 const Pagenation = () => {
   return (
     <div className=" flex justify-between w-full h-auto px-6 py-4  items-center gap-3 self-stretch border-t border-gray-200">
       <div className="flex  items-center flex-1 flex-grow-0 flex-shrink-0">
         <button className="gap-1 border border-gray-300  bg-  shadow-sm text-gray-700">
-          <Image src={ArrwoLeft} alt="" />
+          <img src={'/svg/button/arrow-left.svg'} alt="" />
           Previous
         </button>
       </div>
@@ -38,7 +34,7 @@ const Pagenation = () => {
         <button className="gap-1 border border-gray-300  bg-  shadow-sm text-gray-700">
           {" "}
           Next
-          <Image src={ArrwoRigth} alt="" />
+          <img src={'/svg/button/arrow-right.svg'} alt="" />
         </button>
       </div>
     </div>

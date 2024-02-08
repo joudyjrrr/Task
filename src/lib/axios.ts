@@ -22,7 +22,7 @@ axiosInstance.interceptors.request.use((config) => {
   return config;
 });
 axiosInstance.interceptors.response.use(
-  (response: A) => {
+  (response) => {
     // if (response.status === 200 && response.data.status === 400) {
     //   errorToast(response.data.message);
     // }

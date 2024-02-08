@@ -1,5 +1,5 @@
 
-import React, { FC } from "react";
+import { FC } from "react";
 
 const Badge: FC<{
   src?: string ;

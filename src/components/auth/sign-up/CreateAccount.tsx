@@ -14,8 +14,7 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { Select } from "@radix-ui/react-select";
-import { MouseEventHandler } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 interface CreateAccountProps {
   nextStep: string;
@@ -26,7 +25,7 @@ const CreateAccount: React.FunctionComponent<CreateAccountProps> = ({
   setStep,
   nextStep,
 }) => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const changeStepHandler = () => {
     setStep(nextStep);

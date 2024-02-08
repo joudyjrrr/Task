@@ -1,20 +1,19 @@
 "use client";
-import React, { FC } from "react";
 import { Label } from "@/components/ui/label";
-import { useForm } from "react-hook-form";
+import { FunctionComponent } from "react";
 
-import { Input } from "@/components/ui/input";
-import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Input } from "@/components/ui/input";
 import { Link, useNavigate } from "react-router-dom";
 
-type Ilogin = {
-  email: string;
-  password: string;
-};
-const page: FC<{
-  SetAuth: (arg: boolean) => void;
-}> = ({ SetAuth }) => {
+// type Ilogin = {
+//   email: string;
+//   password: string;
+// };
+const SignIn: FunctionComponent<{
+  // SetAuth: (arg: boolean) => void;
+}> = ({}) => {
   // const form = useForm<Ilogin>();
   const navigate = useNavigate();
 
@@ -48,7 +47,7 @@ const page: FC<{
             </p>
           </div>
           <div className="flex">
-            {new Array(5).fill(1).map((d, index) => (
+            {new Array(5).fill(1).map((_, index) => (
               <img
                 alt="Star"
                 key={index}
@@ -100,7 +99,7 @@ const page: FC<{
 
               <Button
                 onClick={() => {
-                  SetAuth(true);
+                  // SetAuth(true);
                   navigate("/");
                 }}
                 className="w-full text-white flex py-[0.625rem] px-4 justify-center items-center gap-[.375rem] rounded-radius_md bg-Brand-600 border border-Brand-600 shadow-sm"
@@ -126,4 +125,4 @@ const page: FC<{
   );
 };
 
-export default page;
+export default SignIn;

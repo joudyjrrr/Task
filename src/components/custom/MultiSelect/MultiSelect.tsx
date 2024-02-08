@@ -1,9 +1,7 @@
-import React, { FC, Fragment } from "react";
-
-import Select, { MenuProps, StylesConfig, components } from "react-select";
+import Select, { StylesConfig, components } from "react-select";
 import "./style.css";
-import OrangeCheck from "../../../../public/svg/global/OrangeCheck.svg";
-const MultiSelect: FC<{
+
+const MultiSelect: React.FunctionComponent<{
   style?: StylesConfig;
 }> = ({ style }) => {
   const Styles: StylesConfig = {
@@ -48,7 +46,7 @@ const MultiSelect: FC<{
             <div className="flex-grow">{props.data.label}</div>
             <img
               alt=""
-              src={OrangeCheck}
+              src={'/'}
               className="w-[0.8rem] h-[0.8rem] rounded-full"
             />
           </div>

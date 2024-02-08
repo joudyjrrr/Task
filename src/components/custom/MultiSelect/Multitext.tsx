@@ -1,9 +1,7 @@
-
-"use client"
+"use client";
 import { Textarea } from "@/components/ui/textarea";
-import Image from "next/image";
 import React, { useState } from "react";
-import Close from "../Assets/SVGs/Dashboard/x-close.svg";
+
 const Multitext = () => {
   const [inputText, setInputText] = useState<string>("");
   const [styledText, setStyledText] = useState<string[]>([]);
@@ -29,9 +27,9 @@ const Multitext = () => {
           styledText.map((d, index) => (
             <div className="flex p-0.5 pl-[0.5625rem] gap-[0.19rem] justify-center items-center rounded-md border border-gray-300">
               <p>{d}</p>
-              <Image
+              <img
                 onClick={() => handleRemoveItem(index)}
-                src={Close}
+                src={"/svg/global/x-close.svg"}
                 alt=""
                 className="w-3 h-3"
               />

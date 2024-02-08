@@ -1,7 +1,6 @@
-
-import HumyTable from "@/components/_Offers/HumyTable";
-import KitchenTable from "@/components/_Offers/KitchenTable";
 import Title from "@/components/custom/Title";
+import HumyTable from "@/components/offers/HumyTable";
+import KitchenTable from "@/components/offers/KitchenTable";
 import { Button } from "@/components/ui/button";
 import { OFFERS_PATH } from "@/routes/paths";
 import { Link } from "react-router-dom";

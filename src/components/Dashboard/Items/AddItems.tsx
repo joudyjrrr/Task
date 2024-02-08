@@ -1,22 +1,15 @@
 "use client";
-import Image from "next/image";
 import React, { useState } from "react";
 // import home from "../../Assets/SVGs/Dashboard/home-line.svg";
-import RwoRight from "../../../Assets/SVGs/Dashboard/chevron-right.svg";
-import Pl from "../../../Assets/SVGs/Dashboard/placeholder.svg";
-import Pl2 from "../../../Assets/SVGs/Dashboard/placeholder(1).svg";
-import Help from "../../../Assets/SVGs/Dashboard/help-circle.svg";
-import Close from "../../../Assets/SVGs/Dashboard/x-close.svg";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import CustomSelect from "@/components/custom/MultiSelect/CustomSelect";
 import { Button } from "@/components/ui/button";
-import { useRouter } from "next/navigation";
-import CustomSelect from "../../../Components/CustomSelect";
-
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+// import { useNavigate } from "react-router-dom";
 
 const AddItems = () => {
-  const router = useRouter();
+  // const navgiate = useNavigate();
   const [inputText, setInputText] = useState<string>("");
   const [styledText, setStyledText] = useState<string[]>([]);
   const [input2Text, setInputText2] = useState<string>("");
@@ -37,31 +30,31 @@ const AddItems = () => {
       setInputText2("");
     }
   };
-  const handleRemoveItem2 = (index: number) => {
-    setStyledText2((prevText) => {
-      const updatedText = [...prevText];
-      updatedText.splice(index, 1);
-      return updatedText;
-    });
-  };
-  const handleRemoveItem1 = (index: number) => {
-    setStyledText((prevText) => {
-      const updatedText = [...prevText];
-      updatedText.splice(index, 1);
-      return updatedText;
-    });
-  };
+  // const handleRemoveItem2 = (index: number) => {
+  //   setStyledText2((prevText) => {
+  //     const updatedText = [...prevText];
+  //     updatedText.splice(index, 1);
+  //     return updatedText;
+  //   });
+  // };
+  // const handleRemoveItem1 = (index: number) => {
+  //   setStyledText((prevText) => {
+  //     const updatedText = [...prevText];
+  //     updatedText.splice(index, 1);
+  //     return updatedText;
+  //   });
+  // };
   return (
     <div className="px-[2.5rem] py-12  m-0 col-span-2">
       <div className="flex flex-col gap-8 items-start w-full">
         <div className="flex flex-col flex-grow gap-5 items-start border-b border-gray-300 pb-5 w-full">
           <div className="flex items-center">
-            {/* <Image src={home} alt="home" className="w-5 h-5" /> */}
-            <Image src={RwoRight} alt="home" className="w-4 h-4" />
+            {/* <img src={''} alt="home" className="w-5 h-5" /> */}
+            <img src={''} alt="home" className="w-4 h-4" />
             <p className="px-2 text-gray-600 text-Text-sm font-sm leading-5">
               Items
             </p>
-            <Image src={RwoRight} alt="home" className="w-4 h-4" />
+            <img src={''} alt="home" className="w-4 h-4" />
             <p className="py-1 flex justify-center rounded-md bg-gray-50 px-2 text-gray-700 text-Text-sm font-md leading-5">
               Add Item
             </p>
@@ -127,19 +120,19 @@ const AddItems = () => {
               </Label>
               <div className="flex items-start rounded-lg border border-gray-300 shadow-sm h-[2.5rem]">
                 <div className="flex basis-[35%] justify-center items-center py-2 px-4 gap-2 border-r border-gray-300 bg-gray-50">
-                  <Image src={Pl} alt="" className="w-5 h-5" />
+                  <img src={''} alt="" className="w-5 h-5" />
                   <p className="text-gray-800 text-Text-sm font-md leading-5">
                     Mid
                   </p>
                 </div>
                 <div className="flex  basis-[33%] justify-center items-center py-2 px-4 gap-2 border-r border-gray-300">
-                  <Image src={Pl2} alt="" className="w-5 h-5" />
+                  <img src={''} alt="" className="w-5 h-5" />
                   <p className="text-gray-800 text-Text-sm font-md leading-5">
                     Medium
                   </p>
                 </div>
                 <div className="flex  basis-[33%] justify-center items-center py-2 px-4 gap-2 border-r border-gray-30">
-                  <Image src={Pl2} alt="" className="w-5 h-5" />
+                  <img src={''} alt="" className="w-5 h-5" />
                   <p className="text-gray-800 text-Text-sm font-md leading-5">
                     Hot
                   </p>
@@ -173,7 +166,7 @@ const AddItems = () => {
                 TriggerClassName="w-full flex"
                 children={
                   <div className=" flex flex-grow justify-end items-center">
-                    <Image src={Help} alt="" className="w-4 h-4 " />
+                    <img src={''} alt="" className="w-4 h-4 " />
                     <p className="px-[0.875rem] py-[0.625rem]">Cal</p>
                   </div>
                 }
@@ -184,12 +177,12 @@ const AddItems = () => {
               <div className="w-full flex-col flex p-3 gap-2 rounded-md border border-gray-300  shadow-sm">
                 <div className="flex gap-1">
                   {styledText &&
-                    styledText.map((d, index) => (
+                    styledText.map((d) => (
                       <div className="flex p-0.5 pl-[0.5625rem] gap-[0.19rem] justify-center items-center rounded-md border border-gray-300">
                         <p>{d}</p>
-                        <Image
-                          onClick={() => handleRemoveItem1(index)}
-                          src={Close}
+                        <img
+                          // onClick={('') => handleRemoveItem1(index)}
+                          src={'/svg/global/x-close.svg'}
                           alt=""
                           className="w-3 h-3"
                         />
@@ -210,12 +203,11 @@ const AddItems = () => {
               <div className="w-full flex p-3 gap-2 rounded-md border border-gray-300  shadow-sm">
                 <div className="flex gap-[0.38rem]">
                   {styled2Text &&
-                    styled2Text.map((d, index) => (
+                    styled2Text.map((d) => (
                       <div className="flex p-0.5 gap-[0.19rem] pl-[0.5625rem] justify-center items-center rounded-md border border-gray-300">
                         <p>{d}</p>
-                        <Image
-                          onClick={() => handleRemoveItem2(index)}
-                          src={Close}
+                        <img
+                         src={'/svg/global/x-close.svg'}
                           alt=""
                           className="w-3 h-3"
                         />
@@ -232,8 +224,8 @@ const AddItems = () => {
             </div>
             <div className="flex flex-col gap-3">
               <Button
-                onClick={() => router.push("Add-Item2")}
-                Color={`Orang`}
+                // onClick={() => router.push("Add-Item2")}
+                // Color={`Orang`}
                 className="bg-Brand-600 text-white"
               >
                 Next

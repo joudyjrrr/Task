@@ -1,4 +1,3 @@
-import React from "react";
 
 const Icon = (path: string) => <img src={path} alt="nav Icon" />;
 

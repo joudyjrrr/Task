@@ -3,8 +3,7 @@ import SVGBackGround from "@/components/custom/MultiSelect/SVGBackGround";
 import WhyDoThis from "@/components/custom/MultiSelect/WhyDoThis";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
-import React, { MouseEventHandler } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 
 interface VerifyIdProps {
   setStep: (nextStep: string) => void;

@@ -3,7 +3,7 @@ import Mail from "../../../../Assets/SVGs/SingIn/mail-01.svg";
 
 const CheckEmail: React.FunctionComponent<{
   setStep: React.Dispatch<React.SetStateAction<number>>;
-}> = ({ setStep }) => {
+}> = ({}) => {
   return (
     <div className="w-full justify-center h-screen flex  p-0">
       <div className="flex  px-8 pb-12 flex-col pt-24 gap-8 max-w-[22.5rem] h-full max-sm:!px-4 max-sm:!py-12">

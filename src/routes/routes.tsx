@@ -1,17 +1,25 @@
+import Layout from "@/layout/Layout";
+import SignIn from "@/pages/auth/SignIn";
+import SignUp from "@/pages/auth/SignUp";
+import AddCoupon from "@/pages/coupons/AddCoupon";
+import AllCoupons from "@/pages/coupons/AllCoupons";
+import Overview from "@/pages/dashboard/Overview";
+import AllFeedback from "@/pages/feedback/AllFeedback";
+import AddOffer from "@/pages/offers/AddOffer";
+import AllOffers from "@/pages/offers/AllOffers";
+import AllPromotions from "@/pages/promotions/Promotions"
+import PromotionDetails from "@/pages/promotions/promotion-details/PromotionDetails"
+
 import { Navigate, useRoutes } from "react-router-dom";
 import {
-  AUTH_PAGES,
-  DASHBOARD_PAGES,
-  OFFERS_PAGES,
-  PROMOTION_PAGES,
-} from "./elements";
-import {
   AUTH_ROUTES_PATH,
-  DASHBOAR_ROUTES_PATH,
-  OFFERS_ROUTES_PATH,
+  COUPONS_ROUTES,
+  DASHBOAR_ROUTES,
+  FEEDBACK_ROUTES,
+  OFFERS_ROUTES,
   PROMOTIONS_PATH,
 } from "./paths";
-import Layout from "@/layout/Layout";
+import { AUTH_PAGES } from "./elements";
 
 export default function Router() {
   return useRoutes([
@@ -25,8 +33,8 @@ export default function Router() {
         {
           path: AUTH_ROUTES_PATH.ROOT,
           children: [
-            { path: AUTH_ROUTES_PATH.SIGN_IN, element: AUTH_PAGES.SIGN_IN },
-            { path: AUTH_ROUTES_PATH.SIGN_UP, element: AUTH_PAGES.SIGN_UP },
+            { path: AUTH_ROUTES_PATH.SIGN_IN, element: <SignIn /> },
+            { path: AUTH_ROUTES_PATH.SIGN_UP, element: <SignUp /> },
           ],
         },
       ],
@@ -37,24 +45,49 @@ export default function Router() {
       element: <Layout />,
       children: [
         {
-          path: DASHBOAR_ROUTES_PATH.ROOT,
+          path: DASHBOAR_ROUTES.ROOT,
           children: [
             {
-              path: DASHBOAR_ROUTES_PATH.OVERVIEW,
-              element: DASHBOARD_PAGES.OVERVIEW,
+              path: DASHBOAR_ROUTES.OVERVIEW,
+              element: <Overview />,
             },
           ],
         },
+
         {
-          path: OFFERS_ROUTES_PATH.ROOT,
+          path: OFFERS_ROUTES.ROOT,
           children: [
             {
               index: true,
-              element: OFFERS_PAGES.ALL_OFFERS,
+              element: <AllOffers />,
             },
             {
-              path: OFFERS_ROUTES_PATH.ADD_OFFER,
-              element: OFFERS_PAGES.ADD_OFFER,
+              path: OFFERS_ROUTES.ADD_OFFER,
+              element: <AddOffer />,
+            },
+          ],
+        },
+
+        {
+          path: FEEDBACK_ROUTES.ROOT,
+          children: [
+            {
+              index: true,
+              element: <AllFeedback />,
+            },
+          ],
+        },
+
+        {
+          path: COUPONS_ROUTES.ROOT,
+          children: [
+            {
+              index: true,
+              element: <AllCoupons />,
+            },
+            {
+              path: COUPONS_ROUTES.ADD_COUPON,
+              element: <AddCoupon />,
             },
           ],
         },
@@ -63,11 +96,11 @@ export default function Router() {
           children: [
             {
               index: true,
-              element: PROMOTION_PAGES.ALL_PROMOTION,
+              element: <AllPromotions/>
             },
             {
               path: PROMOTIONS_PATH.PROMOTIONS_DETAILS,
-              element: PROMOTION_PAGES.PROMOTIONS_DETAILS,
+              element: <PromotionDetails/>,
             },
           ],
         },

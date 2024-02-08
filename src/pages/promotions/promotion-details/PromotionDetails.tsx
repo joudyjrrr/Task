@@ -1,10 +1,8 @@
-import React from 'react'
-import PromotionDetails from '../../../components/Promotions/PromotionDetails'
+
+import PromotionDetails from "../../../components/Promotions/PrmotionDetails";
 
 const page = () => {
-  return (
-   <PromotionDetails/>
-  )
-}
+  return <PromotionDetails />;
+};
 
-export default page
+export default page;

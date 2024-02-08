@@ -1,4 +1,3 @@
-
 const Icon = (path: string) => <img src={path} alt="nav Icon" />;
 
 const ICONS = {
@@ -68,6 +67,7 @@ export const firstNavConfig = [
   {
     title: "wallet",
     icon: ICONS.wallet,
+    pathname: "/wallet",
   },
 ];
 export const secondNavConfig = [

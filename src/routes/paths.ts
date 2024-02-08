@@ -48,3 +48,7 @@ export const PROMOTIONS_PATH = {
   ALL_PRMOMTIONS: "promotions",
   PROMOTIONS_DETAILS: path("promotions", "promotios-details")
 }
+export const WALLET_PATH = {
+  ALL_WALLET: "wallet",
+  
+}

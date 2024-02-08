@@ -18,8 +18,10 @@ import {
   FEEDBACK_ROUTES,
   OFFERS_ROUTES,
   PROMOTIONS_PATH,
+  WALLET_PATH,
 } from "./paths";
 import { AUTH_PAGES } from "./elements";
+import Wallet from "@/pages/wallet/Wallet";
 
 export default function Router() {
   return useRoutes([
@@ -102,6 +104,16 @@ export default function Router() {
               path: PROMOTIONS_PATH.PROMOTIONS_DETAILS,
               element: <PromotionDetails/>,
             },
+          ],
+        },
+        {
+          path: WALLET_PATH.ALL_WALLET,
+          children: [
+            {
+              index: true,
+              element: <Wallet/>
+            },
+           
           ],
         },
       ],
